@@ -1,11 +1,10 @@
 import React from 'react';
 import Page from './pages/home/index';
-import Sumario from './components/Sumario';
+//import Sumario from './components/dados/Sumario';
 
 function App() {
   return (
     <>
-      <Sumario />
       <Page />
     </>
   );
