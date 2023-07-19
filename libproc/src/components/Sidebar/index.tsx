@@ -25,6 +25,7 @@ const Sidebar = ({active, changeState}: {changeState: (state:boolean) => void, a
       <FaTimes onClick={closeSidebar} />  
       <Content>
         <SidebarItem Icon={FaHome} Text="Home" link="/home" />
+        <SidebarItem Icon={FaEnvelope} Text="Memoria" link="/teste" />
 
       </Content>
     </Container>
