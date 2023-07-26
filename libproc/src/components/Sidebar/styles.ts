@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: #171923;
+  background-color: brown;
   position: fixed;
   height: 100%;
   top: 0px;
   left: 0px;
   width: 300px;
+  overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
 
   animation: showSidebar .4s;
 
