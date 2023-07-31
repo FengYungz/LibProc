@@ -2,9 +2,9 @@ import React from 'react';
 
 const BibliotecaC = () => {
     return (
-        <div>
+        <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
             <h3>Biblioteca C padrão</h3>
-            <p>
+            <p className="espaco-paragrafo">
             Biblioteca C padrão
             </p>
         </div>

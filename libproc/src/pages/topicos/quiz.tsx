@@ -8,10 +8,10 @@ function Quiz({quest, ans}:{quest:string; ans:string}){
   return(
     <div>
         <h4>Exercício</h4>
-        <p>{quest}</p>
+        <p className="espaco-paragrafo">{quest}</p>
         <div>
           <button onClick={showOrHide}>{answer ? "Ocultar resposta" : "Mostrar resposta"}</button>
-          {answer ? <p>{ans}</p> : null}
+          {answer ? <p className="espaco-paragrafo">{ans}</p> : null}
         </div>
       </div>
   );

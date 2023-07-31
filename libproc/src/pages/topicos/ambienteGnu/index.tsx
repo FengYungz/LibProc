@@ -2,9 +2,9 @@ import React from 'react';
 
 const AmbienteGNU = () => {
     return (
-        <div>
+        <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
             <h3>O ambiente de desenvolvimento GNU</h3>
-            <p>
+            <p className="espaco-paragrafo">
             O ambiente de desenvolvimento GNU
             </p>
         </div>
