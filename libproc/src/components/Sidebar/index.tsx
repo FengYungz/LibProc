@@ -21,51 +21,51 @@ const Sidebar = ({active, changeState}: {changeState: (state:boolean) => void, a
       <FaTimes onClick={closeSidebar} />  
       <Content>
         <SidebarItem Icon={FaHome} Text="Home" link="/" />
-        <SidebarItem Icon={BiBookBookmark} Text="AcessoMemoria" link="/topicos/acessoMemoria" />
-        <SidebarItem Icon={BiBookBookmark} Text="Arquitetura" link="/topicos/arquitetura" />
-        <SidebarItem Icon={BiBookBookmark} Text="ConjuntoInstrucoes" link="/topicos/conjuntoInstrucoes" />
-        <SidebarItem Icon={BiBookBookmark} Text="InstrucoesSalto" link="/topicos/salto" />
-        <SidebarItem Icon={BiBookBookmark} Text="InstrucoesALU" link="/topicos/alu" />
-        <SidebarItem Icon={BiBookBookmark} Text="ReinicioExcecoes" link="/topicos/reinicioExcecoes" />
+        <SidebarItem Icon={BiBookBookmark} Text="Arquitetura do Processador ARM" link="/topicos/arquitetura" />
+        <SidebarItem Icon={BiBookBookmark} Text="O conjunto de instruções do Processador ARM" link="/topicos/conjuntoInstrucoes" />
+        <SidebarItem Icon={BiBookBookmark} Text="Instruções de Salto" link="/topicos/salto" />
+        <SidebarItem Icon={BiBookBookmark} Text="Instruções ALU" link="/topicos/alu" />
+        <SidebarItem Icon={BiBookBookmark} Text="Instruções de acesso à memória" link="/topicos/acessoMemoria" />
+        <SidebarItem Icon={BiBookBookmark} Text="Reinício, Exceções e Interrupções" link="/topicos/reinicioExcecoes" />
         <SidebarItem Icon={BiBookBookmark} Text="Coprocessadores" link="/topicos/coprocessadores" />
-        <SidebarItem Icon={BiBookBookmark} Text="ConjuntoInstrucoesThumb" link="/topicos/thumb" />
-        <SidebarItem Icon={BiBookBookmark} Text="InstrucoesSaltoThumb" link="/topicos/saltoThumb" />
-        <SidebarItem Icon={BiBookBookmark} Text="OperacoesAritmeticas" link="/topicos/aritmeticas" />
-        <SidebarItem Icon={BiBookBookmark} Text="InstrucoesAcessoMemoria" link="/topicos/loadStore" />
-        <SidebarItem Icon={BiBookBookmark} Text="ConjuntoInstrucoesThumb2" link="/topicos/thumb2" />
-        <SidebarItem Icon={BiBookBookmark} Text="ExecucaoConjuntoInstrucoesThumb" link="/topicos/execucaoThumb" />
-        <SidebarItem Icon={BiBookBookmark} Text="AmbienteGNU" link="/topicos/ambienteGnu" />
-        <SidebarItem Icon={BiBookBookmark} Text="AssemblerGNU" link="/topicos/assembler" />
-        <SidebarItem Icon={BiBookBookmark} Text="Simbolos" link="/topicos/simbolos" />
-        <SidebarItem Icon={BiBookBookmark} Text="Expressoes" link="/topicos/expressoes" />
-        <SidebarItem Icon={BiBookBookmark} Text="DefinicaoSecoes" link="/topicos/definicaoSecoes" />
-        <SidebarItem Icon={BiBookBookmark} Text="AtribuicaoSimbolos" link="/topicos/atribuicaoSimbolos" />
-        <SidebarItem Icon={BiBookBookmark} Text="IntroducaoDados" link="/topicos/introducaoDados" />
-        <SidebarItem Icon={BiBookBookmark} Text="CodigoCondicional" link="/topicos/codigoCondicional" />
-        <SidebarItem Icon={BiBookBookmark} Text="PosicionarEnderecoAtual" link="/topicos/enderecoAtual" />
-        <SidebarItem Icon={BiBookBookmark} Text="MacrosRepeticoes" link="/topicos/macrosRepeticoes" />
-        <SidebarItem Icon={BiBookBookmark} Text="GNULD" link="/topicos/gnuld" />
-        <SidebarItem Icon={BiBookBookmark} Text="DepuradorGNU" link="/topicos/gdb" />
-        <SidebarItem Icon={BiBookBookmark} Text="ExecucaoControleProcesso" link="/topicos/execucaoProcesso" />
+        <SidebarItem Icon={BiBookBookmark} Text="Conjunto de Instruções ThumbConjunto de Instruções Thumb" link="/topicos/thumb" />
+        <SidebarItem Icon={BiBookBookmark} Text="Instruções de salto" link="/topicos/saltoThumb" />
+        <SidebarItem Icon={BiBookBookmark} Text="Operações aritméticas" link="/topicos/aritmeticas" />
+        <SidebarItem Icon={BiBookBookmark} Text="Instruções de acesso à memória (Load/Store)" link="/topicos/loadStore" />
+        <SidebarItem Icon={BiBookBookmark} Text="Conjunto de instruções Thumb-2" link="/topicos/thumb2" />
+        <SidebarItem Icon={BiBookBookmark} Text="Execução do conjunto de instruções Thumb" link="/topicos/execucaoThumb" />
+        <SidebarItem Icon={BiBookBookmark} Text="O ambiente de desenvolvimento GNU" link="/topicos/ambienteGnu" />
+        <SidebarItem Icon={BiBookBookmark} Text="GNU assembler (as)" link="/topicos/assembler" />
+        <SidebarItem Icon={BiBookBookmark} Text="Símbolos" link="/topicos/simbolos" />
+        <SidebarItem Icon={BiBookBookmark} Text="Expressões" link="/topicos/expressoes" />
+        <SidebarItem Icon={BiBookBookmark} Text="Definição de Seções" link="/topicos/definicaoSecoes" />
+        <SidebarItem Icon={BiBookBookmark} Text="Atribuição de Símbolos" link="/topicos/atribuicaoSimbolos" />
+        <SidebarItem Icon={BiBookBookmark} Text="Introdução de dados" link="/topicos/introducaoDados" />
+        <SidebarItem Icon={BiBookBookmark} Text="Código condicional" link="/topicos/codigoCondicional" />
+        <SidebarItem Icon={BiBookBookmark} Text="Posicionar o endereço atual" link="/topicos/enderecoAtual" />
+        <SidebarItem Icon={BiBookBookmark} Text="Macros e repetições" link="/topicos/macrosRepeticoes" />
+        <SidebarItem Icon={BiBookBookmark} Text="GNU ld" link="/topicos/gnuld" />
+        <SidebarItem Icon={BiBookBookmark} Text="O Depurador do Gnu (gdb)" link="/topicos/gdb" />
+        <SidebarItem Icon={BiBookBookmark} Text="Execução e controle do processo" link="/topicos/execucaoProcesso" />
         <SidebarItem Icon={BiBookBookmark} Text="Breakpoints" link="/topicos/breakpoints" />
-        <SidebarItem Icon={BiBookBookmark} Text="VariaveisConteudoMemoria" link="/topicos/variaveisMemoria" />
-        <SidebarItem Icon={BiBookBookmark} Text="ControleInterfaceUsuario" link="/topicos/interfaceUsuario" />
-        <SidebarItem Icon={BiBookBookmark} Text="PlacaDesenvolvimento" link="/topicos/placaDesenvolvimento" />
-        <SidebarItem Icon={BiBookBookmark} Text="PortasEntradaSaidaGPIO" link="/topicos/gpio" />
-        <SidebarItem Icon={BiBookBookmark} Text="GerenciadorInterrupcoes" link="/topicos/gerenciadorInterrupcoes" />
-        <SidebarItem Icon={BiBookBookmark} Text="Temporizadores" link="/topicos/temporizadores" />
+        <SidebarItem Icon={BiBookBookmark} Text="Variáveis e conteúdo da memória" link="/topicos/variaveisMemoria" />
+        <SidebarItem Icon={BiBookBookmark} Text="Controle da interface do usuário" link="/topicos/interfaceUsuario" />
+        <SidebarItem Icon={BiBookBookmark} Text="Placa de desenvolvimento Evaluator-7T" link="/topicos/placaDesenvolvimento" />
+        <SidebarItem Icon={BiBookBookmark} Text="Portas de Entrada e Saída (GPIO)" link="/topicos/gpio" />
+        <SidebarItem Icon={BiBookBookmark} Text="Gerenciador de Interrupções" link="/topicos/gerenciadorInterrupcoes" />
+        <SidebarItem Icon={BiBookBookmark} Text="Temporizadores (timers)" link="/topicos/temporizadores" />
         <SidebarItem Icon={BiBookBookmark} Text="UARTs" link="/topicos/uarts" />
-        <SidebarItem Icon={BiBookBookmark} Text="ImplementacaoLinguagemC" link="/topicos/implementacaoFuncoesC" />
-        <SidebarItem Icon={BiBookBookmark} Text="CRuntime" link="/topicos/cRuntime" />
-        <SidebarItem Icon={BiBookBookmark} Text="BibliotecaC" link="/topicos/bibliotecaC" />
-        <SidebarItem Icon={BiBookBookmark} Text="DadosC" link="/topicos/dadosC" />
-        <SidebarItem Icon={BiBookBookmark} Text="ImplementacaoFuncoesC" link="/topicos/implementacaoFuncoesC" />
-        <SidebarItem Icon={BiBookBookmark} Text="GNUCompiler" link="/topicos/gcc" />
-        <SidebarItem Icon={BiBookBookmark} Text="AmbienteDesenvolvimento" link="/topicos/ambienteDesenvolvimento" />
-        <SidebarItem Icon={BiBookBookmark} Text="AtributosFuncaoGCC" link="/topicos/atributosFuncao" />
-        <SidebarItem Icon={BiBookBookmark} Text="AssemblerInline" link="/topicos/assemblerInline" />
-        <SidebarItem Icon={BiBookBookmark} Text="RuntimeGCC" link="/topicos/runtimeGcc" />
-        <SidebarItem Icon={BiBookBookmark} Text="BibliotecaCNewlib" link="/topicos/bibliotecaCNewlib" />
+        <SidebarItem Icon={BiBookBookmark} Text="Implementação de funções em C" link="/topicos/implementacaoFuncoesC" />
+        <SidebarItem Icon={BiBookBookmark} Text="C-Runtime" link="/topicos/cRuntime" />
+        <SidebarItem Icon={BiBookBookmark} Text="Biblioteca C padrão" link="/topicos/bibliotecaC" />
+        <SidebarItem Icon={BiBookBookmark} Text="Dados em C" link="/topicos/dadosC" />
+        <SidebarItem Icon={BiBookBookmark} Text="Implementação de funções em C" link="/topicos/implementacaoFuncoesC" />
+        <SidebarItem Icon={BiBookBookmark} Text="GNU C Compiler (gcc)" link="/topicos/gcc" />
+        <SidebarItem Icon={BiBookBookmark} Text="Ambiente de desenvolvimento" link="/topicos/ambienteDesenvolvimento" />
+        <SidebarItem Icon={BiBookBookmark} Text="Atributos de função no GCC" link="/topicos/atributosFuncao" />
+        <SidebarItem Icon={BiBookBookmark} Text="Assembler inline" link="/topicos/assemblerInline" />
+        <SidebarItem Icon={BiBookBookmark} Text="O runtime do gcc" link="/topicos/runtimeGcc" />
+        <SidebarItem Icon={BiBookBookmark} Text="Biblioteca C padrão: newlib" link="/topicos/bibliotecaCNewlib" />
       </Content>
     </Container>
   )

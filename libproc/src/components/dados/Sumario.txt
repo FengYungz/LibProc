@@ -162,7 +162,7 @@ const Sumario = () => {
 
   return (
     <div>
-      <h2>Sumário</h2>
+      <h4>Sumário</h4>
       <ol>
         {items.map((item) => (
           <li key={item.id}>
