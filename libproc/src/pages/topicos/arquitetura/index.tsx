@@ -4,13 +4,14 @@ import arquitetura_2 from './imgs/arquitetura_2.png';
 import arquitetura_3 from './imgs/arquitetura_3.png';
 import arquitetura_4 from './imgs/arquitetura_4.png';
 import '../../../assets/styles/global.css';
-import Quiz from '../quiz'
+import MultipleChoiceQuestion from '../multipleChoice'
 interface Question {
-  quest: string;
-  ans: string;
+  question: string;
+  options: string[];
+  answer:number;
 }
 
-const Question1: Question = { quest: "perguntaperguntaperguntaperguntaperguntaperguntaperguntaperguntaperguntaperguntapergunta", ans: "respostarespostarespostarespostarespostarespostarespostarespostarespostarespostarespostarespostaresposta" };
+const Question1: Question = { question: "perguntaperguntaperguntaperguntaperguntaperguntaperguntaperguntaperguntaperguntapergunta", options: ["opt1", "opt2", "opt3", "opt4"], answer:1 };
 
 const Arquitetura = () => {
   return (
@@ -145,7 +146,7 @@ const Arquitetura = () => {
         de memória convencional (entrada e saída mapeada em memória).
       </p>
       <div>
-        <Quiz {...Question1} />
+        <MultipleChoiceQuestion {...Question1} />
       </div>
     </div>
   );
