@@ -66,6 +66,16 @@ const Sidebar = ({active, changeState}: {changeState: (state:boolean) => void, a
         <SidebarItem Icon={BiBookBookmark} Text="Assembler inline" link="/topicos/assemblerInline" />
         <SidebarItem Icon={BiBookBookmark} Text="O runtime do gcc" link="/topicos/runtimeGcc" />
         <SidebarItem Icon={BiBookBookmark} Text="Biblioteca C padrão: newlib" link="/topicos/bibliotecaCNewlib" />
+        <SidebarItem Icon={BiBookBookmark} Text="Raspberry Pi" link="/topicos/raspberryPi" />
+        <SidebarItem Icon={BiBookBookmark} Text="Processo de inicialização (boot)" link="/topicos/processoInicializacao" />
+        <SidebarItem Icon={BiBookBookmark} Text="Interfaces de depuração" link="/topicos/interfaceDepuracao" />
+        <SidebarItem Icon={BiBookBookmark} Text="Arquitetura do SoC BCM3826" link="/topicos/arquiteturaSoc" />
+        <SidebarItem Icon={BiBookBookmark} Text="O Coprocessador 15 e o Gerenciador de Memória (MMU)" link="/topicos/coprocessadorMmu" />
+        <SidebarItem Icon={BiBookBookmark} Text="Periféricos" link="/topicos/perifericos" />
+        <SidebarItem Icon={BiBookBookmark} Text="Interrupções" link="/topicos/interrupcoes" />
+        <SidebarItem Icon={BiBookBookmark} Text="Periférico “auxiliar” e a Mini-UART" link="/topicos/perifericoAuxiliar" />
+        <SidebarItem Icon={BiBookBookmark} Text="Core timer" link="/topicos/coreTimer" />
+
       </Content>
     </Container>
   )
