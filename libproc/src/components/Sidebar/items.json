@@ -20,7 +20,7 @@
         "title": "Aula2",
         "items": [
             {
-            "icon":"BiBookBookmark", "text":"Conjunto de Instruções", "link":"/topicos/arquitetura"
+            "icon":"BiBookBookmark", "text":"Instruções de acesso à memória", "link":"./topics/acesso-memoria"
             }
         ]
     },
@@ -28,7 +28,28 @@
         "title": "Aula3",
         "items": [
             {
-            "icon":"BiBookBookmark", "text":"Conjunto de Instruções", "link":"/topicos/arquitetura"
+                "icon":"BiBookBookmark", "text":"Reinício, Exceções e Interrupções", "link":""
+            },
+            {
+                "icon":"BiBookBookmark", "text":"Coprocessadores", "link":"./topics/coprocessadores"
+            },
+            {
+                "icon":"BiBookBookmark", "text":"Conjunto de instruções Thumb", "link":"./topics/thumb"
+            },
+            {
+                "icon":"BiBookBookmark", "text":"Instruções de salto Thumb", "link":"./topics/salto-thumb"
+            },
+            {
+                "icon":"BiBookBookmark", "text":"Operações aritméticas", "link":"./topics/aritmeticas"
+            },
+            {
+                "icon":"BiBookBookmark", "text":"Instruções de acesso à memória (Load/Store)", "link":"./topics/load-store"
+            },
+            {
+                "icon":"BiBookBookmark", "text":"Conjunto de instruções Thumb-2", "link":"./topics/thumb2"
+            },
+            {
+                "icon":"BiBookBookmark", "text":"Execução do conjunto de instruções Thumb", "link":"./topics/execucao-thumb"
             }
         ]
     },
@@ -36,7 +57,10 @@
         "title": "Aula4",
         "items": [
             {
-            "icon":"BiBookBookmark", "text":"Conjunto de Instruções", "link":"/topicos/arquitetura"
+                "icon":"BiBookBookmark", "text": "O ambiente de desenvolvimento GNU", "link": "./topics/ambiente-gnu"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "GNU assembler (as)", "link": "./topics/assembler"
             }
         ]
     },
@@ -44,23 +68,54 @@
         "title": "Aula5",
         "items": [
             {
-            "icon":"BiBookBookmark", "text":"Conjunto de Instruções", "link":"/topicos/arquitetura"
+                "icon":"BiBookBookmark", "text": "Símbolos", "link": "./topics/simbolos"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Expressões", "link": "./topics/expressoes"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Definição de Seções", "link": "./topics/definicao-secoes"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Atribuição de Símbolos", "link": "./topics/atribuicao-simbolos"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Introdução de dados", "link": "./topics/introducao-dados"
             }
         ]
     },
     {
-        "title": "Aula6",
+        "title": "Aula6&7",
         "items": [
             {
-            "icon":"BiBookBookmark", "text":"Conjunto de Instruções", "link":"/topicos/arquitetura"
-            }
-        ]
-    },
-    {
-        "title": "Aula7",
-        "items": [
+                "icon":"BiBookBookmark", "text": "Código condicional", "link": "./topics/codigo-condicional"
+            },
             {
-            "icon":"BiBookBookmark", "text":"Conjunto de Instruções", "link":"/topicos/arquitetura"
+                "icon":"BiBookBookmark", "text": "Posicionar o endereço atual", "link": "./topics/endereco-atual"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Macros e repetições", "link": "./topics/macros-repeticoes"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "GNU ld", "link": "./topics/gnu-ld"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "O Depurador do Gnu (gdb)", "link": "./topics/gdb"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Execução e controle do processo", "link": "./topics/execucao-processo"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Breakpoints", "link": "./topics/breakpoints"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Variáveis e conteúdo da memória", "link": "./topics/variaveis-memoria"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Controle da interface do usuário", "link": "./topics/interface-usuario"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Placa de desenvolvimento Evaluator-7T", "link": "./topics/placa-desenvolvimento"
             }
         ]
     },
@@ -68,15 +123,49 @@
         "title": "Aula8",
         "items": [
             {
-            "icon":"BiBookBookmark", "text":"Conjunto de Instruções", "link":"/topicos/arquitetura"
-            }
-        ]
-    },
-    {
-        "title": "Aula9",
-        "items": [
+                "icon":"BiBookBookmark", "text": "Portas de Entrada e Saída (GPIO)", "link": "./topics/gpio"
+            },
             {
-            "icon":"BiBookBookmark", "text":"Conjunto de Instruções", "link":"/topicos/arquitetura"
+                "icon":"BiBookBookmark", "text": "Gerenciador de Interrupções", "link": "./topics/gerenciador-interrupcoes"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Temporizadores (timers)", "link": "./topics/temporizadores"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "UARTs", "link": "./topics/uarts"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Implementação da Linguagem C", "link": "./topics/implementacao-linguagem-c"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "C-Runtime", "link": "./topics/c-runtime"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Biblioteca C padrão", "link": "./topics/biblioteca-c"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Dados em C", "link": "./topics/dados-c"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Implementação de funções em C", "link": "./topics/implementacao-funcoes-c"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "GNU C Compiler (gcc)", "link": "./topics/gcc"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Ambiente de desenvolvimento", "link": "./topics/ambiente-desenvolvimento"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Atributos de função no GCC", "link": "./topics/atributos-funcao"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Assembler inline", "link": "./topics/assembler-inline"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "O runtime do gcc", "link": "./topics/runtime-gcc"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Biblioteca C padrão: newlib", "link": "./topics/biblioteca-c-newlib"
             }
         ]
     },
@@ -84,7 +173,7 @@
         "title": "Aula10",
         "items": [
             {
-            "icon":"BiBookBookmark", "text":"Conjunto de Instruções", "link":"/topicos/arquitetura"
+                "icon":"BiBookBookmark", "text": "Raspberry Pi", "link": "../pages/topicos/raspberryPi"
             }
         ]
     },
@@ -92,7 +181,34 @@
         "title": "Aula11",
         "items": [
             {
-            "icon":"BiBookBookmark", "text":"Conjunto de Instruções", "link":"/topicos/arquitetura"
+                "icon":"BiBookBookmark", "text": "Processo de inicialização (boot)", "link": "../pages/topicos/processoInicializacao"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Interfaces de depuração", "link": "../pages/topicos/interfaceDepuracao"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Makefile exemplo", "link": ""
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Arquitetura do SoC BCM3826", "link": "../pages/topicos/arquiteturaSoc"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "O Coprocessador 15 e o Gerenciador de Memória (MMU)", "link": "../pages/topicos/coprocessadorMmu"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Periféricos", "link": "../pages/topicos/perifericos"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "GPIOs", "link": ""
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Interrupções", "link": "../pages/topicos/interrupcoes"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Periférico “auxiliar” e a Mini-UART", "link": "../pages/topicos/perifericoAuxiliar"
+            },
+            {
+                "icon":"BiBookBookmark", "text": "Core timer", "link": "../pages/topicos/coreTimer"
             }
         ]
     }
