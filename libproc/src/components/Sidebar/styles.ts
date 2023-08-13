@@ -31,6 +31,7 @@ export const Container = styled.div`
       width: 300px;
     }
   }
+
 `;
 
 export const Content = styled.div`
