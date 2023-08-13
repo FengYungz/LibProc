@@ -11,6 +11,15 @@ import acesso_memoria_9 from './imgs/acesso-memoria_9.png';
 import acesso_memoria_10 from './imgs/acesso-memoria_10.png';
 import acesso_memoria_11 from './imgs/acesso-memoria_11.png';
 import '../../../assets/styles/global.css';
+import Quiz from "../quiz";
+
+interface Question{
+  quest: string;
+  ans: any;
+}
+
+const Question1: Question = {quest: "Qual é a maior distância na memória que uma instrução ld ou st consegue acessar a partir de um registrador base e uma constante?", ans: <div><p>O formato das instruções ld e st permite 12 bits de imediato, portanto o imediato pode representar até 12^12 - 1 = 4095 bytes. Como no ARM as posições de memória devem ser múltiplas de 4 (4 bytes por palavra) e o maior múltiplo de 4 menor do que 4095 é 4092, o alcance dessas instruções é de 4092/4=1023 palavras!</p><p>Para uma visão mais completa do tema consulte a discussão <a href="https://www.wise-ware.com.br/pcs3732/d/42-alcance-das-instrucoes-ldrstr">Alcance das instruções ldr/str</a> no fórum da disciplina :)</p></div>};
+
 
 const AcessoMemoria = () => {
     return (
@@ -157,6 +166,9 @@ const AcessoMemoria = () => {
                 executadas, há ganho significativo de velocidade em relação à transferência do
                 valor de cada registrador individualmente, com uma instrução separada.
             </p>
+            <div>
+            <Quiz {...Question1}/>
+            </div>
         </div>
     );
 };

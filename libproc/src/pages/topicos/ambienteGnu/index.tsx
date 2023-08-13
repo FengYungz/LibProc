@@ -6,6 +6,15 @@ import ambiente_gnu_3 from './imgs/ambiente-gnu_3.png';
 import ambiente_gnu_4 from './imgs/ambiente-gnu_4.png';
 import ambiente_gnu_5 from './imgs/ambiente-gnu_5.png';
 import ambiente_gnu_6 from './imgs/ambiente-gnu_6.png';
+import Quiz from "../quiz";
+
+interface Question{
+  quest: string;
+  ans: any;
+}
+
+const Question1: Question = {quest: "Você sabe como funciona um Makefile? Por que o alvo gerado por \'make\' é aquele que gera o executável? Como gerar um alvo que com o comando \'make kil\' mate o processo do qemu?", ans: <div><p>O Makefile é uma ferramenta utilizada para a automação da compilação de projetos de software, especialmente útil quando o processo envolve a criação e vinculação de arquivos intermediários, evitando erros de digitação nos comandos e agilizando o processo de compilação, que provavelmente será feito com frequência.</p><p>Quando nenhum nenhum target é especificado com o comando make, a primeira regra declarada no arquivo é executada, por isso o alvo para gerar o executável é ativado com o comando 'make'.</p><p>É possível gerar um alvo que mate o processo qemu utilizando o comando 'pkill', a sintaxe no arquivo Makefile seria algo como "kill: pkill qemu".</p><p>Cheque a discussão sobre o arquivo <a href="https://www.wise-ware.com.br/pcs3732/d/65-makefile">Makefile</a> no fórum da disciplina.</p></div>};
+
 
 const AmbienteGNU = () => {
     return (
@@ -34,6 +43,7 @@ const AmbienteGNU = () => {
                 </ul>
             </p>
             <img className="center-image" src={ambiente_gnu_1} alt="AmbienteGNU 1" />
+            <p className="espaco-paragrafo"></p>
             <p className="espaco-paragrafo">
                 Os softwares estão previamente instalados nos computadores do
                 laboratório. Para instalá-los em seu computador, normalmente basta usar a
@@ -193,6 +203,11 @@ const AmbienteGNU = () => {
                 Ao executar os comandos com o make, você deve obter algo do tipo:
             </p>
             <img className="center-image" src={ambiente_gnu_6} alt="AmbienteGNU 6" />
+            <p className="espaco-paragrafo"></p>
+            <div>
+                <Quiz {...Question1}/>
+            </div>
+
         </div>
     );
 };
