@@ -47,6 +47,15 @@ import AtributosFuncaoGCC from '../pages/topicos/atributosFuncao';
 import AssemblerInline from '../pages/topicos/assemblerInline';
 import RuntimeGCC from '../pages/topicos/runtimeGcc';
 import BibliotecaCNewlib from '../pages/topicos/bibliotecaCNewlib';
+import RaspberryPi from '../pages/topicos/raspberryPi';
+import ProcessoInicializacao from '../pages/topicos/processoInicializacao';
+import InterfaceDepuracao from '../pages/topicos/interfaceDepuracao';
+import ArquiteturaSoc from '../pages/topicos/arquiteturaSoc';
+import CoprocessadorMmu from '../pages/topicos/coprocessadorMmu';
+import Perifericos from '../pages/topicos/perifericos';
+import Interrupcoes from '../pages/topicos/interrupcoes';
+import PerifericosAuxiliar from '../pages/topicos/perifericoAuxiliar';
+import CoreTimer from '../pages/topicos/coreTimer';
 
 const AppRoutes = () => {
     return (
@@ -98,6 +107,16 @@ const AppRoutes = () => {
                 <Route path='/topicos/assemblerInline' element={<AssemblerInline />} />
                 <Route path='/topicos/runtimeGcc' element={<RuntimeGCC />} />
                 <Route path='/topicos/bibliotecaCNewlib' element={<BibliotecaCNewlib />} />
+                <Route path='/topicos/raspberryPi' element={<RaspberryPi />} />
+                <Route path='/topicos/processoInicializacao' element={<ProcessoInicializacao />} />
+                <Route path='/topicos/interfaceDepuracao' element={<InterfaceDepuracao />} />
+                <Route path='/topicos/arquiteturaSoc' element={<ArquiteturaSoc />} />
+                <Route path='/topicos/coprocessadorMmu' element={<CoprocessadorMmu />} />
+                <Route path='/topicos/perifericos' element={<Perifericos />} />
+                <Route path='/topicos/interrupcoes' element={<Interrupcoes />} />
+                <Route path='/topicos/perifericoAuxiliar' element={<PerifericosAuxiliar />} />
+                <Route path='/topicos/coreTimer' element={<CoreTimer />} />
+
             </Routes>
         </BrowserRouter>
     );
