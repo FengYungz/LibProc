@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../../assets/styles/global.css';
 import interface_depuracao_1 from './imgs/interface-depuracao_1.png';
-import interface_depuracao_2 from './imgs/interface-depuracao_2.png';
 
 const InterfaceDepuracao = () => {
     return (
@@ -30,14 +29,6 @@ const InterfaceDepuracao = () => {
                 interface (ou “transporte”) a utilizar (placa Segger J-Link). Para acessar a
                 interface UART usaremos um conversor USB/Serial e qualquer software de
                 emulação de terminal (por exemplo, screen).
-            </p>
-
-            <img className="center-image" src={interface_depuracao_2} alt="interfaceDepuracao 2" />
-
-            <p>
-                A interface de depuração com o gdb suporta conexões com os quatro
-                núcleos independentemente. O primeiro núcleo responde na porta “3333”, o
-                segundo na porta “3334” e assim por diante.
             </p>
 
         </div>
