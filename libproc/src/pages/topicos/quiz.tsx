@@ -27,7 +27,7 @@ const ShowButton=styled.button`
   font-family: 'Roboto Condensed', sans-serif;
 `;
 
-function Quiz({quest, ans}:{quest:string; ans:string}){
+function Quiz({quest, ans}:{quest:string; ans:any}){
 
   const [answer, setAnswer] = useState(false);
   const showOrHide = () => setAnswer(!answer);

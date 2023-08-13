@@ -10,6 +10,17 @@ import alu_8 from './imgs/alu_8.png';
 import alu_9 from './imgs/alu_9.png';
 import alu_10 from './imgs/alu_10.png';
 import '../../../assets/styles/global.css';
+import MultipleChoiceQuestion from '../multipleChoice'
+interface Question {
+  question: string;
+  options: string[];
+  answer:number;
+  correctMessage: any;
+  incorrectMessage: any;
+}
+
+const Question1: Question = { question: "Selecione a alternativa com uma instrução de ULA que inverta o sinal de um registrador, uma instrução de ULA que zere um registrador, uma instrução de ULA que inverta os bits de um registrador e uma instrução que inverta as metades de 16 bits de um registrador entre si (0x12345678 -> 0x56781234). ", options: ["SUB R1, #0, R0; AND R0, #0; MVN R0, R0 ;MOV R0, R0, ROL #16", "RSB R1, R0, #0; OR R0, #0; MOV R0, -R0 ;MOV R0, R0, ROR #16", "SUB R1, #0, R0; AND R0, #0; MVN R0, R0 ;MOV R0, R0, ROL #16", "RSB R1, R0, #0; AND R0, #0; MVN R0, R0 ;MOV R0, R0, ROR #16"], answer:3, correctMessage:<div><p>A resposta está correta!</p><p>Cheque a discussão <a href="https://www.wise-ware.com.br/pcs3732/d/10-sinal">Sinal</a> no fórum para mais instruções que invertam o sinal de um registrador.</p><p>Cheque a discussão <a href="https://www.wise-ware.com.br/pcs3732/d/7-zerando-um-registrador">Zerando um registrador</a> para mais operações de zerar.</p><p>Cheque a discussão <a href="https://www.wise-ware.com.br/pcs3732/d/31-operacao-logica-nao">Operação lógica NÃO</a> para outras operações de inversão de bits.</p><p>Não deixe também de se aprofundar na discussão <a href="https://www.wise-ware.com.br/pcs3732/d/19-manipulacao-de-bits">Manipulação de Bits</a>.</p></div>, incorrectMessage:<div><p>A resposta correta seria RSB R1, R0, #0; AND R0, #0; MVN R0, R0 ;MOV R0, R0, ROR #16</p><p>Cheque a discussão <a href="https://www.wise-ware.com.br/pcs3732/d/10-sinal">Sinal</a> no fórum para mais instruções que invertam o sinal de um registrador.</p><p>Cheque a discussão <a href="https://www.wise-ware.com.br/pcs3732/d/7-zerando-um-registrador">Zerando um registrador</a> para mais operações de zerar.</p><p>Cheque a discussão <a href="https://www.wise-ware.com.br/pcs3732/d/31-operacao-logica-nao">Operação lógica NÃO</a> para outras operações de inversão de bits.</p><p>Não deixe também de se aprofundar na discussão <a href="https://www.wise-ware.com.br/pcs3732/d/19-manipulacao-de-bits">Manipulação de Bits</a>.</p></div>};
+
 
 const ALU = () => {
     return (
@@ -27,6 +38,7 @@ const ALU = () => {
                 registradores, como veremos a seguir).
             </p>
             <img className="center-image" src={alu_1} alt="Alu 1" />
+            <p className="espaco-paragrafo"></p>
             <p className="espaco-paragrafo">
                 O código de condição tem o mesmo formato das demais instruções do
                 ARM: caso a condição expressa na instrução não seja válida, a instrução é
@@ -45,6 +57,7 @@ const ALU = () => {
                 seguir:
             </p>
             <img className="center-image" src={alu_2} alt="Alu 2" />
+            <p className="espaco-paragrafo"></p>
             <p className="espaco-paragrafo">
                 <ul className="alinha-item">
                     <li>
@@ -95,6 +108,7 @@ const ALU = () => {
                     </li>
 
                 </ul>
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo"> As instruções de comparação e testes lógicos somente fazem sentido
                     quando o bit “S” (set flags) é igual a “um”: o comportamento do processador ao
@@ -120,6 +134,7 @@ const ALU = () => {
                     utilizado como operando pela ALU.
                 </p>
                 <img className="center-image" src={alu_3} alt="Alu 3" />
+                <p className="espaco-paragrafo"></p>
                 <p className="espaco-paragrafo">
                     O comportamento do barrel shifter com relação ao valor de Rm é definido
                     pelos campos “shifter” (bits 7-11) e “tipo” (bits 5 e 6) da instrução.
@@ -133,6 +148,7 @@ const ALU = () => {
                     desse flag.
                 </p>
                 <img className="center-image" src={alu_5} alt="Alu 5" />
+                <p className="espaco-paragrafo"></p>
                 <p className="espaco-paragrafo">
                     No caso em que o bit “R” é “zero” trata-se de uma movimentação de
                     tamanho fixo, especificado diretamente pelo campo “shifter”, de cinco bits,
@@ -144,12 +160,14 @@ const ALU = () => {
                     orr R0, R1, R2, lsr #5
                 </p>
                 <img className="center-image" src={alu_6} alt="Alu 6" />
+                <p className="espaco-paragrafo"></p>
                 <p className="espaco-paragrafo">
                     Por outro lado, na situação na qual o bit “R” é “um”, o tamanho do
                     deslocamento ou rotação é determinado pelo valor de um quarto registrador,
                     especificado pelo campo Rs (bits 8-11), no mesmo formato que Rd, Rn e Rm:
                 </p>
                 <img className="center-image" src={alu_7} alt="Alu 7" />
+                <p className="espaco-paragrafo"></p>
                 <p className="espaco-paragrafo">
                     Exemplo
 
@@ -157,6 +175,7 @@ const ALU = () => {
                     orr R0, R1, R2, lsr R3
                 </p>
                 <img className="center-image" src={alu_8} alt="Alu 8" />
+                <p className="espaco-paragrafo"></p>
                 <p className="espaco-paragrafo">
                     Finalmente, o último caso é aquele no qual o bit “I” é igual a “1” e o
                     campo de segundo operando contém um valor imediato positivo. Também neste
@@ -179,6 +198,9 @@ const ALU = () => {
                 </p>
                 <img className="center-image" src={alu_10} alt="Alu 10" />
             </p>
+            <div>
+                <MultipleChoiceQuestion {...Question1} />
+            </div>
         </div>
     );
 };

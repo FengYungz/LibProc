@@ -38,7 +38,7 @@ const ShowButton=styled.button`
   font-family: 'Roboto Condensed', sans-serif;
 `;
 
-function MultipleChoiceQuestion({ question, options, answer, correctMessage, incorrectMessage }:{question:string; options:string[]; answer:number; correctMessage:string; incorrectMessage:string}) {
+function MultipleChoiceQuestion({ question, options, answer, correctMessage, incorrectMessage }:{question:string; options:string[]; answer:number; correctMessage:any; incorrectMessage:any}) {
   const [selectedOption, setSelectedOption] = useState(-1);
   const [show, setShow] = useState(false);
 
@@ -50,9 +50,9 @@ function MultipleChoiceQuestion({ question, options, answer, correctMessage, inc
 
   return (
     <div>
+      <h4>Exercício</h4>
+      <p>Teste seu conhecimento:</p>
       <QuestionBox>
-        <h4>Exercício</h4>
-        <p>Teste seu conhecimento:</p>
         <p>{question}</p>
         <div>
           {options.map((option:string, index:number) => (
@@ -72,7 +72,7 @@ function MultipleChoiceQuestion({ question, options, answer, correctMessage, inc
           ))}
         </div>
       </QuestionBox>
-      {(show && selectedOption==answer) ? <AnswerBox $show $rightAnswer><h4>Correto!</h4><p>{correctMessage}</p></AnswerBox> : (show && selectedOption != answer) ? <AnswerBox $show $rightAnswer={false}><h4>Incorreto. :(</h4><p>{incorrectMessage}</p></AnswerBox> : null}
+      {(show && selectedOption==answer) ? <AnswerBox $show $rightAnswer><h4>Correto!</h4>{correctMessage}</AnswerBox> : (show && selectedOption != answer) ? <AnswerBox $show $rightAnswer={false}><h4>Incorreto. :(</h4>{incorrectMessage}</AnswerBox> : null}
       <ShowButton onClick={showOrHide}>{show ? "Ocultar resposta" : "Mostrar resposta"}</ShowButton>
     </div>
   );
