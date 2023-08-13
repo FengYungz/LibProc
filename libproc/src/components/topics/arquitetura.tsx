@@ -1,25 +1,15 @@
 import React from 'react';
-import arquitetura_1 from './imgs/arquitetura_1.png';
-import arquitetura_2 from './imgs/arquitetura_2.png';
-import arquitetura_3 from './imgs/arquitetura_3.png';
-import arquitetura_4 from './imgs/arquitetura_4.png';
-import '../../../assets/styles/global.css';
-import MultipleChoiceQuestion from '../multipleChoice'
-interface Question {
-  question: string;
-  options: string[];
-  answer:number;
-  correctMessage: string;
-  incorrectMessage: string;
-}
-
-const Question1: Question = { question: "perguntaperguntaperguntaperguntaperguntaperguntaperguntaperguntaperguntaperguntapergunta", options: ["opt1", "opt2", "opt3", "opt4"], answer:1, correctMessage: "A resposta está correta! Para mais respostas consulte..", incorrectMessage:"A resposta correta seria ... Para mais respostas consulte..." };
+import arquitetura_1 from '../imgs/arquitetura_1.png';
+import arquitetura_2 from '../imgs/arquitetura_2.png';
+import arquitetura_3 from '../imgs/arquitetura_3.png';
+import arquitetura_4 from '../imgs/arquitetura_4.png';
+import '../../css/styles.css';
 
 const Arquitetura = () => {
   return (
     <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
       <h3>Arquitetura do Processador ARM</h3>
-      <p className="espaco-paragrafo">
+      <p>
         O processador ARM (Advanced Risc Machine, originalmente Acorn Risc
         Machine) é um microprocessador RISC (Reduced Instruction Set Computer) de 32 bits
         muito popular. Sua primeira versão foi desenvolvida em 1985 e várias revisões
@@ -32,7 +22,7 @@ const Arquitetura = () => {
         apresentado na figura seguinte:
       </p>
       <img className="center-image" src={arquitetura_1} alt="Arquitetura 1" />
-      <p className="espaco-paragrafo">
+      <p>
         Outras versões da arquitetura ARM contam com pipelines com maior
         número de estágios, pipelines superescalares e podem incluir processadores
         secundários, como processador de ponto flutuante escalar (armhf) e processador
@@ -81,7 +71,7 @@ const Arquitetura = () => {
         diferentes significados, conforme a tabela a seguir:
       </p>
       <img className="center-image" src={arquitetura_2} alt="Arquitetura 2" />
-      <p className="espaco-paragrafo">
+      <p>
         O modo de execução do processador é utilizado para definir níveis de
         privilégio, permitindo o controle de características especiais da arquitetura,
         como o acesso a recursos da CPU e conjuntos de registradores alternativos.
@@ -100,7 +90,7 @@ const Arquitetura = () => {
         CPSR no momento da mudança de modo.
       </p>
       <img className="center-image" src={arquitetura_3} alt="Arquitetura 3" />
-      <p className="espaco-paragrafo">
+      <p>
         Os registradores R8 até R12 têm instâncias especiais no modo “FIQ”
         (chamado de modo “fast interrupt” ou “interrupção rápida”), com o objetivo de
         agilizar o tratamento dessa interrupção, uma vez que a cópia e a restauração dos
@@ -127,7 +117,7 @@ const Arquitetura = () => {
       </p>
       <img className="center-image" src={arquitetura_4} alt="Arquitetura 4" />
 
-      <p className="espaco-paragrafo">
+      <p>
         A arquitetura ARM pode salvar dados compostos por múltiplos bytes na
         memória empregando tanto a ordenação little endian (bytes menos significativos
         são salvos em endereços menores) quanto big endian (bytes mais significativos em
@@ -147,9 +137,6 @@ const Arquitetura = () => {
         realizado através das mesmas instruções load e store, usando o endereçamento
         de memória convencional (entrada e saída mapeada em memória).
       </p>
-      <div>
-        <MultipleChoiceQuestion {...Question1} />
-      </div>
     </div>
   );
 };

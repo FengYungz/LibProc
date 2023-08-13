@@ -34,7 +34,8 @@ function Quiz({quest, ans}:{quest:string; ans:string}){
 
   return(
     <div>
-      <h4>Exercício</h4>
+      <h4>Para pensar...</h4>
+      <p>Você consegue formular uma resposta para essa questão?</p>
       <QuizBox>
         <p className="espaco-paragrafo">{quest}</p>
       </QuizBox>
