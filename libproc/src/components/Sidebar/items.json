@@ -1,6 +1,6 @@
 [
     {
-        "title": "Aula1",
+        "title": "Aula 1",
         "items": [
             {
                 "icon": "BiBookBookmark",
@@ -25,7 +25,7 @@
         ]
     },
     {
-        "title": "Aula2",
+        "title": "Aula 2",
         "items": [
             {
                 "icon": "BiBookBookmark",
@@ -35,7 +35,7 @@
         ]
     },
     {
-        "title": "Aula3",
+        "title": "Aula 3",
         "items": [
             {
                 "icon": "BiBookBookmark",
@@ -120,7 +120,7 @@
         ]
     },
     {
-        "title": "Aula4",
+        "title": "Aula 4",
         "items": [
             {
                 "icon": "BiBookBookmark",
@@ -135,7 +135,7 @@
         ]
     },
     {
-        "title": "Aula5",
+        "title": "Aula 5",
         "items": [
             {
                 "icon": "BiBookBookmark",
@@ -165,7 +165,7 @@
         ]
     },
     {
-        "title": "Aula6&7",
+        "title": "Aula 6 & 7",
         "items": [
             {
                 "icon": "BiBookBookmark",
@@ -225,7 +225,7 @@
         ]
     },
     {
-        "title": "Aula8",
+        "title": "Aula 8",
         "items": [
             {
                 "icon": "BiBookBookmark",
@@ -260,7 +260,7 @@
         ]
     },
     {
-        "title": "Aula10",
+        "title": "Aula 10",
         "items": [
             {
                 "icon": "BiBookBookmark",
@@ -290,7 +290,7 @@
         ]
     },
     {
-        "title": "Aula11",
+        "title": "Aula 11",
         "items": [
             {
                 "icon": "BiBookBookmark",

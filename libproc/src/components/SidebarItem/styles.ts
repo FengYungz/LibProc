@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  background-color: white; 
   font-size: 20px;
   color: white;
   padding: 10px;
@@ -15,7 +14,11 @@ export const Container = styled.div`
     margin: 0 20px;
   }
 
+  &{
+    align-items: flex-start; /* Alinha os itens à esquerda */
+  }
+
   &:hover {
-    background-color: black;
+    background-color: #D65A38;
   }
 `;

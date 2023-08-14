@@ -5,12 +5,12 @@
 }
 
 body {
-  max-width: 210mm; /* Defina uma largura máxima */
+  /*max-width: 210mm; /* Defina uma largura máxima */
   width: 100%; /* A largura ocupará 100% da largura da janela */
   background-color: white;
   overflow-x: hidden;
   margin: 0 auto;
-  padding: 20px;
+  /*padding: 20px;*/
   font-family: 'Nunito', sans-serif;
 }
 

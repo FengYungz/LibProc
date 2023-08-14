@@ -21,6 +21,38 @@ export const Container = styled.div`
     cursor: pointer;
   }
 
+  button{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #ff6b6b, #e74c3c);
+    transition: background-color 0.3s ease;
+    border: 1px solid #c0392b;
+  }
+
+  
+
+  div{
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  a{
+    text-decoration: none; /* Remove a linha sublinhada */
+    color: black;
+  }
+
+  nav{
+    
+    a{
+      font-size: 11.5px;
+    }
+  }
+
+  div.home{
+    align-items: center;
+  }
   @keyframes showSidebar {
     from {
       opacity: 0;

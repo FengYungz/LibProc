@@ -32,18 +32,22 @@ console.log(isActive);
     <Container>
       <FaTimes onClick={closeSidebar} />  
       <Content>
+      <div className="home">
       <SidebarItem Icon={FaHome} Text="Home" link="/" />
+      </div>
+      <div className="conteudo">
         {JsonItems.map(item=> (
-          <><button key={item.title} onClick={ () => onclick(item.title)} className='menuTopicos'>{item.title}</button>
-            {isActive && aulaSelect === item.title && (<nav
-          className={`menu`}
-        >
-          {item.items.map(sideBarItem => (
-            <SidebarItem Icon={BiBookBookmark} Text={sideBarItem.text} link={sideBarItem.link}/>
+            <><button key={item.title} onClick={ () => onclick(item.title)} className='menuTopicos'>{item.title}</button>
+              {isActive && aulaSelect === item.title && (<nav
+            className={`menu`}
+          >
+            {item.items.map(sideBarItem => (
+              <SidebarItem Icon={BiBookBookmark} Text={sideBarItem.text} link={sideBarItem.link}/>
+            ))}
+          </nav>)}
+            </>
           ))}
-        </nav>)}
-          </>
-        ))}
+      </div>
       </Content>
     </Container>
   )
