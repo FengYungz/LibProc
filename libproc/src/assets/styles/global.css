@@ -45,7 +45,7 @@ body {
 /* Adicione media queries para ajustar o layout em diferentes tamanhos de tela */
 @media screen and (max-width: 768px) {
   body {
-    padding: 10px; /* Reduza o padding para telas menores */
+    /*padding: 10px; /* Reduza o padding para telas menores */
   }
   
   .center-image {
