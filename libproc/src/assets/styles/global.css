@@ -5,7 +5,7 @@
 }
 
 body {
-  /*max-width: 210mm; /* Defina uma largura máxima */
+  max-width: 210mm; /* Defina uma largura máxima */
   width: 100%; /* A largura ocupará 100% da largura da janela */
   background-color: white;
   overflow-x: hidden;
@@ -45,7 +45,7 @@ body {
 /* Adicione media queries para ajustar o layout em diferentes tamanhos de tela */
 @media screen and (max-width: 768px) {
   body {
-    padding: 10px; /* Reduza o padding para telas menores */
+    /*padding: 10px; /* Reduza o padding para telas menores */
   }
   
   .center-image {

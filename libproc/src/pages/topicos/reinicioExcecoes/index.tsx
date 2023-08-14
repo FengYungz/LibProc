@@ -4,6 +4,7 @@ import reinicio_excecoes_2 from './imgs/reinicio-excecoes_2.png';
 import reinicio_excecoes_3 from './imgs/reinicio-excecoes_3.png';
 import reinicio_excecoes_4 from './imgs/reinicio-excecoes_4.png';
 import '../../../assets/styles/global.css';
+import Header from "../../../components/Header/index";
 import MultipleChoiceQuestion from '../multipleChoice'
 interface Question {
   question: string;
@@ -18,7 +19,9 @@ const Question1: Question = { question: "Escolha a sequência válida de estados
 
 const ReinicioExcecoes = () => {
   return (
-    <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+    <div>
+      <Header />
+      <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
       <h3>Reinício, Exceções e Interrupções</h3>
       <p className="espaco-paragrafo">
         Ao ser ligada a energia ou ao ser detectado o sinal de reset, o processador
@@ -137,6 +140,7 @@ const ReinicioExcecoes = () => {
         <MultipleChoiceQuestion {...Question1} />
       </div>
     </div>
+  </div>
   );
 };
 
