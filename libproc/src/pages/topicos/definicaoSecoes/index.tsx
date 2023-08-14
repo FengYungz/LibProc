@@ -5,7 +5,7 @@ import definicao_secoes_1 from './imgs/definicao-secoes_1.png';
 const DefinicaoSecoes = () => {
     return (
         <>
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Definição de Seções</h3>
                 <p className="espaco-paragrafo">
                     Seções são áreas de memória tratadas como unidades pelo linker e loader,

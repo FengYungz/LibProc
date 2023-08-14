@@ -5,7 +5,7 @@ import atribuicao_simbolos_1 from './imgs/atribuicao-simbolos_1.png';
 const AtribuicaoSimbolos = () => {
     return (
         <>
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Atribuição de Símbolos</h3>
                 <p className="espaco-paragrafo">
                     As diretivas .equ e .set permitem atribuir o resultado de uma expressão a um símbolo:

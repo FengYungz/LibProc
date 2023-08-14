@@ -7,7 +7,7 @@ const Thumb = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Conjunto de Instruções Thumb</h3>
                 <p className="espaco-paragrafo">
                     A partir da versão 4 da arquitetura (ARM v.4), os processadores passaram

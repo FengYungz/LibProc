@@ -12,7 +12,7 @@ const PlacaDesenvolvimento = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Placa de desenvolvimento Evaluator-7T</h3>
                 <p className="espaco-paragrafo">
                     A placa de desenvolvimento utilizada no laboratório é baseada no

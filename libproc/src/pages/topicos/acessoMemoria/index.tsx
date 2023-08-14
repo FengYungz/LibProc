@@ -26,7 +26,7 @@ const AcessoMemoria = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Instruções de acesso à memória</h3>
                 <p className="espaco-paragrafo">
                     Como em qualquer processador RISC, as únicas instruções do conjunto de

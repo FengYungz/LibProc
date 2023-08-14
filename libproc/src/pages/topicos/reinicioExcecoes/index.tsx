@@ -10,7 +10,7 @@ const ReinicioExcecoes = () => {
   return (
     <>
       <Header />
-      <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+      <div className="content-container">
         <h3>Reinício, Exceções e Interrupções</h3>
         <p className="espaco-paragrafo">
           Ao ser ligada a energia ou ao ser detectado o sinal de reset, o processador

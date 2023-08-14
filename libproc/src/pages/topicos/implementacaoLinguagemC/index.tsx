@@ -6,7 +6,7 @@ const ImplementacaoLinguagemC = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Implementação da Linguagem C</h3>
                 <p className="espaco-paragrafo">
                     A linguagem “C” foi criada da década de 70 por Dennis Ritchie, a partir do

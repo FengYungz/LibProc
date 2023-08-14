@@ -12,7 +12,7 @@ const BibliotecaCNewlib = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Biblioteca C padrão: newlib</h3>
                 <p className="espaco-paragrafo">
                     O compilador cruzado arm-none-eabi-gcc normalmente é compilado

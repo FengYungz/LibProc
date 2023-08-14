@@ -27,7 +27,7 @@ const ALU = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Instruções ALU</h3>
                 <p className="espaco-paragrafo">
                     As instruções ALU são as instruções que podem alterar o valor de um

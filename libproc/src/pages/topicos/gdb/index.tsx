@@ -6,7 +6,7 @@ const DepuradorGNU = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>O Depurador do Gnu (gdb)</h3>
                 <p className="espaco-paragrafo">
                     O depurador do sistema Gnu (Gnu Debugger ou gdb) é um software com

@@ -8,7 +8,7 @@ const GNUCompiler = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>GNU C Compiler (gcc)</h3>
                 <p className="espaco-paragrafo">
                     O formato geral do comando do compilador C é

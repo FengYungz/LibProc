@@ -7,7 +7,7 @@ const MakefileExemplo = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Makefile Exemplo</h3>
                 
                 <p>

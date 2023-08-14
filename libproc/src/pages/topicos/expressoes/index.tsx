@@ -5,7 +5,7 @@ import expressoes_1 from './imgs/expressoes_1.png';
 const Expressoes = () => {
     return (
         <>
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Expressões</h3>
                 <p className="espaco-paragrafo">
                     O gnu-as é capaz de processar expressões envolvendo operadores

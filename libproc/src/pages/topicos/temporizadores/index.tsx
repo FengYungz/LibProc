@@ -10,7 +10,7 @@ const Temporizadores = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Temporizadores (timers)</h3>
                 <p className="espaco-paragrafo">Um temporizador (timer) é um registrador interno do componente
                     S3C4510B que é decrementado a cada ciclo do sinal master clock (MCLK).

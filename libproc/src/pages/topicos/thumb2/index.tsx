@@ -7,7 +7,7 @@ const ConjuntoInstrucoesThumb2 = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Conjunto de instruções Thumb-2</h3>
                 <p className="espaco-paragrafo">
                     Conjunto de instruções Thumb-2O conjunto de instruções thumb possui muitas vantagens em termos de

@@ -10,7 +10,7 @@ import variaveis_memoria_5 from './imgs/variaveis-memoria_5.png';
 const VariaveisConteudoMemoria = () => {
     return (
         <>
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Variáveis e conteúdo da memória</h3>
                 <p className="espaco-paragrafo">
                     <h4>Comandos “print” e “display”</h4>

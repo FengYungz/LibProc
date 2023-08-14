@@ -17,7 +17,7 @@ const UARTs = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>UARTs</h3>
                 <p className="espaco-paragrafo">O S3C4510B possui duas unidades de comunicação serial tipo UART
                     (universal asynchronous receiver-transmitter) capazes de enviar e receber

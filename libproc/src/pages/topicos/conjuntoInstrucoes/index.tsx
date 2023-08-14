@@ -16,7 +16,7 @@ const ConjuntoInstrucoes = () => {
   return (
     <>
       <Header />
-      <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+      <div className="content-container">
         <h3>O conjunto de instruções do Processador ARM</h3>
         <p className="espaco-paragrafo">
           A maioria das famílias de processadores ARM é capaz de reconhecer mais

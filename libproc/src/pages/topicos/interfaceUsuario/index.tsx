@@ -15,7 +15,7 @@ const Question1: Question = {quest: "Defina o que fazem os comandos \'break f1+5
 const ControleInterfaceUsuario = () => {
     return (
         <>
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Controle da interface do usuário</h3>
                 <p className="espaco-paragrafo">
                     <h4>Layout</h4>

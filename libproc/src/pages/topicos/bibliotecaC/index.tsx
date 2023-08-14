@@ -7,7 +7,7 @@ const BibliotecaC = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Biblioteca C padrão</h3>
                 <p className="espaco-paragrafo">
                     Os compiladores C geralmente oferecem bibliotecas de funções de alto

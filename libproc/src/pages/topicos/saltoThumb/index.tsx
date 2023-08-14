@@ -8,7 +8,7 @@ const InstrucoesSaltoThumb = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Instruções de salto</h3>
                 <p className="espaco-paragrafo">
                     Existem seis tipos de instruções thumb para a realização de saltos, que

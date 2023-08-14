@@ -5,6 +5,8 @@ export const Container = styled.div`
   display: flex;
   background-color: brown; 
   box-shadow: 0 0 20px 3px;
+  position: fixed;
+  width: 100%;
 
   > svg {
     position: fixed;
