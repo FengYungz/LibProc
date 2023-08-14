@@ -6,6 +6,14 @@ import coprocessadores_4 from './imgs/coprocessadores_4.png';
 import coprocessadores_5 from './imgs/coprocessadores_5.png';
 import coprocessadores_6 from './imgs/coprocessadores_6.png';
 import '../../../assets/styles/global.css';
+import Quiz from "../quiz";
+
+interface Question{
+  quest: string;
+  ans: any;
+}
+
+const Question1: Question = {quest: "Qual a sequência de eventos para a execução de uma instrução de coprocessador e quais os sinais envolvidos?", ans: <div><p>A CPU faz o envio de um sinal CPI notificando os coprocessadores que existe uma instrução de coprocessador a ser executada, caso o coprocessador identificado na instrução não exista, um sinal CPA (coprocessador ausente) é enviado como resposta à CPU, caso contrário o processador solicitado notifica a CPU, através do sinal CPB (coprocessor busy), se está disponível no momento para execução da instrução, caso esteja, ele a executa enquanto a CPU continua com a execução das demais instruções, caso CPB esteja ativado a CPU fica em modo stall (introduzindo bolhas na sua pipeline) até que CPB seja desativado e o coprocessador assuma a execução da instrução.</p><p>Confira com mais detalhes o funcionamento da execução de instruções destinadas ao processador 10 (ou 11) de pontos flutuantes em <a href="https://www.wise-ware.com.br/pcs3732/d/83-coprocessador-1011">Coprocessador 10/11</a>.</p><p>Também pode ser interessante checar como funciona o coprocessador 15 em <a href="https://www.wise-ware.com.br/pcs3732/d/82-coprocessador-15">Coprocessador 15</a> :)</p></div>};
 
 const Coprocessadores = () => {
   return (
@@ -52,6 +60,7 @@ const Coprocessadores = () => {
         </p>
         <img className="center-image" src={coprocessadores_1} alt="Coprocessadores 1" />
         <img className="center-image" src={coprocessadores_2} alt="Coprocessadores 2" />
+        <p className="espaco-paragrafo"></p>
         <p className="espaco-paragrafo">
           As instruções que envolvem coprocessadores dependem da execução
           coordenada e da sincronização entre o processador principal e o coprocessador
@@ -74,6 +83,7 @@ const Coprocessadores = () => {
           registradores de um coprocessador:
         </p>
         <img className="center-image" src={coprocessadores_3} alt="Coprocessadores 3" />
+        <p className="espaco-paragrafo"></p>
         <p className="espaco-paragrafo">
           Os campos “condição” e “Rd” são tratados pela CPU, enquanto os demais
           campos somente têm significado para o coprocessador endereçado pelo campo
@@ -89,11 +99,13 @@ const Coprocessadores = () => {
           modos de endereçamento do ARM, à semelhança das instruções ldrh e strh:
         </p>
         <img className="center-image" src={coprocessadores_4} alt="Coprocessadores 4" />
+        <p className="espaco-paragrafo"></p>
         <p className="espaco-paragrafo">
           Os bits “P”, “U”, “N”, “B” e “W” da instrução são usados para especificar o
           modo de endereçamento, conforme a tabela:
         </p>
         <img className="center-image" src={coprocessadores_5} alt="Coprocessadores 5" />
+        <p className="espaco-paragrafo"></p>
         <p className="espaco-paragrafo">
           O significado desses bits é equivalente às instruções vistas anteriormente,
           permitindo o emprego dos modos de endereçamento pré e pós-indexados,
@@ -108,6 +120,7 @@ const Coprocessadores = () => {
           dependente do coprocessador responsável por sua execução:
         </p>
         <img className="center-image" src={coprocessadores_6} alt="Coprocessadores 6" />
+        <p className="espaco-paragrafo"></p>
         Como regra geral, os campos “op1” e “op2” são utilizados pelo
         coprocessador para determinar a operação (opcode) a ser realizada e os campos
         “CRd”, “CRn” e “CRm” especificam os registradores de destino, do primeiro
@@ -118,6 +131,9 @@ const Coprocessadores = () => {
         existem 32 registradores de precisão simples e alguns dos bits do campos de
         opcode são utilizados para complementar os campos “CRd”, “CRn” e “CRm”.
       </p>
+      <div>
+        <Quiz {...Question1}/>
+      </div>
     </div>
   );
 };

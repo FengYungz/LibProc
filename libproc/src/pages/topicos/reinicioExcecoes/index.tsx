@@ -4,6 +4,17 @@ import reinicio_excecoes_2 from './imgs/reinicio-excecoes_2.png';
 import reinicio_excecoes_3 from './imgs/reinicio-excecoes_3.png';
 import reinicio_excecoes_4 from './imgs/reinicio-excecoes_4.png';
 import '../../../assets/styles/global.css';
+import MultipleChoiceQuestion from '../multipleChoice'
+interface Question {
+  question: string;
+  options: string[];
+  answer:number;
+  correctMessage: any;
+  incorrectMessage: any;
+}
+
+const Question1: Question = { question: "Escolha a sequência válida de estados", options: ["SVR -> USR -> SVR -> IRQ -> FIQ -> IRQ", "SVR -> USR -> UNDEF -> USR -> FIQ -> IRQ -> FIQ -> USR", "SVR -> USR -> SVR -> IRQ -> UNDEF -> IRQ", "USR -> SVR -> ABORT -> UNDEF -> SVR"], answer:0, correctMessage:<div><p>A resposta está correta!</p><p>A única opção correta é a primeira, já que na segunda alternativa há uma sequência FIQ -{'>'} IRQ -{'>'} FIQ, que implicaria em uma exceção de prioridade 4 interrompendo o tratamento de uma interrupção de prioridade 3; na terceira alternativa, a sequência FIQ -{'>'} UNDEF -{'>'} FIQ implica em uma interrupção de prioridade 6 interrompendo o tratamento de uma exceção de prioridade 3; e na última alternativa, a sequência  ABORT -{'>'} UNDEF -{'>'} SVR implicaria na interrupção do tratamento de uma interrupção de prioridade 5 por uma de prioridade 6, além de não haver a volta ao estado ABORT que teria sido interrompido.</p><p>Leia mais sobre exceções dentro de exceções e prioridades no tópico <a href="https://www.wise-ware.com.br/pcs3732/d/79-as-excecoes-das-excecoes">As exceções das exceções</a> no fórum da disciplina :) </p></div>, incorrectMessage:<div><p>A única opção correta é a primeira, já que na segunda alternativa há uma sequência FIQ -{'>'} IRQ -{'>'} FIQ, que implicaria em uma exceção de prioridade 4 interrompendo o tratamento de uma interrupção de prioridade 3; na terceira alternativa, a sequência FIQ -{'>'} UNDEF -{'>'} FIQ implica em uma interrupção de prioridade 6 interrompendo o tratamento de uma exceção de prioridade 3; e na última alternativa, a sequência  ABORT -{'>'} UNDEF -{'>'} SVR implicaria na interrupção do tratamento de uma interrupção de prioridade 5 por uma de prioridade 6, além de não haver a volta ao estado ABORT que teria sido interrompido.</p><p>Leia mais sobre exceções dentro de exceções e prioridades no tópico <a href="https://www.wise-ware.com.br/pcs3732/d/79-as-excecoes-das-excecoes">As exceções das exceções</a> no fórum da disciplina :) </p></div>};
+
 
 const ReinicioExcecoes = () => {
   return (
@@ -32,6 +43,7 @@ const ReinicioExcecoes = () => {
         posições da memória física, denominada vetor de interrupções:
       </p>
       <img className="center-image" src={reinicio_excecoes_1} alt="ReinicioExcecoes 1" />
+      <p className="espaco-paragrafo"></p>
       <p className="espaco-paragrafo">
         Observe que existem somente quatro posições de memória reservadas
         para cada vetor, o suficiente para apenas uma instrução de máquina do ARM.
@@ -81,6 +93,7 @@ const ReinicioExcecoes = () => {
         Operacional aos programas executando em modo usuário.
       </p>
       <img className="center-image" src={reinicio_excecoes_2} alt="ReinicioExcecoes 2" />
+      <p className="espaco-paragrafo"></p>
       <p className="espaco-paragrafo">
         Os bits do argumento (bits 0 a 23) são ignorados pela arquitetura, mas
         podem ser analisados pelo serviço de interrupção (lendo a memória com r14
@@ -111,6 +124,7 @@ const ReinicioExcecoes = () => {
         Um registrador deve ser especificado como o destino da informação (“Rd”):
       </p>
       <img className="center-image" src={reinicio_excecoes_3} alt="ReinicioExcecoes 3" />
+      <p className="espaco-paragrafo"></p>
       <p className="espaco-paragrafo">
         A instrução msr (move psr from register) é privilegiada e pode ser usada
         para modificar o valor atual do registrador cpsr ou spsr (conforme o valor do
@@ -118,6 +132,10 @@ const ReinicioExcecoes = () => {
         especificado pelo campo “Rm”:
       </p>
       <img className="center-image" src={reinicio_excecoes_4} alt="ReinicioExcecoes 4" />
+      <p className="espaco-paragrafo"></p>
+      <div>
+        <MultipleChoiceQuestion {...Question1} />
+      </div>
     </div>
   );
 };
