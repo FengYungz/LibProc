@@ -25,6 +25,7 @@ const DepuradorGNU = () => {
                 <li>Alteração (edição) do ponto de execução do programa: execução de saltos, reinícios (reset), encerramento do programa (exit), etc.;</li>
                 <li>Alteração (edição) de qualquer posição de memória (desde que a escrita nessa posição seja permitida) e dos registradores do processador.</li>
             </ul>
+            <p className="espaco-paragrafo"></p>
             <p className="espaco-paragrafo">
                 O depurador pode ser um programa único, executado pela mesma máquina e sistema operacional que executa o programa depurado ou pode ser dividido em duas partes que se comunicam (por exemplo, através de uma rede de computadores, uma porta USB ou um canal serial). Nesse último caso, o programa depurado pode estar em outra máquina, eventualmente em outra arquitetura e por um sistema operacional diferente (ou mesmo não possuir qualquer sistema operacional envolvido). A parte do gdb que é executada na máquina de teste, juntamente com o programa depurado, é chamado de stub.
             </p>
@@ -54,7 +55,7 @@ const DepuradorGNU = () => {
                 É importante notar que enquanto o depurador aguarda um comando do
                 usuário, o processo em teste não está sendo executado e permanece em seu
                 último estado e contexto. Os comandos mais importantes do gdb em linha de
-                comando serão descritos nos próximos parágrafos.
+                comando serão descritos na próxima página.
             </p>
 
         </div>

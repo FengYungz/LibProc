@@ -3,6 +3,15 @@ import '../../../assets/styles/global.css';
 import assembler_1 from './imgs/assembler_1.png';
 import assembler_2 from './imgs/assembler_2.png';
 import assembler_3 from './imgs/assembler_3.png';
+import Quiz from "../quiz";
+
+interface Question{
+  quest: string;
+  ans: any;
+}
+
+const Question1: Question = {quest: "Como traduzir o comando para o assembler presente no Makefile e explicar ele?", ans: <div><p>O comando equivalente à descrição no Makefile é ".s.o: arm-none-eabi-as -g -o $@ ${'<'}" e ele monta os arquivos .s(${'<'}) gerando arquivos .o ($@) com o mesmo nome do arquivo de entrada (o nome é definido com o auxílio da flag -o) e incluindo nesse arquivo informações para depuração (flag -g).</p></div>};
+
 
 const AssemblerGNU = () => {
     return (
@@ -55,6 +64,10 @@ const AssemblerGNU = () => {
             </p>
 
             <img className="center-image" src={assembler_3} alt="Assembler 3" />
+            <p className="espaco-paragrafo"></p>
+            <div>
+            <Quiz {...Question1}/>
+            </div>
         </div >
     );
 };

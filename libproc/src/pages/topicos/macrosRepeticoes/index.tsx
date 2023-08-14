@@ -4,6 +4,15 @@ import macros_repeticoes_1 from './imgs/macros-repeticoes_1.png';
 import macros_repeticoes_2 from './imgs/macros-repeticoes_2.png';
 import macros_repeticoes_3 from './imgs/macros-repeticoes_3.png';
 import macros_repeticoes_4 from './imgs/macros-repeticoes_4.png';
+import Quiz from "../quiz";
+
+interface Question{
+  quest: string;
+  ans: any;
+}
+
+const Question1: Question = {quest: "Escreva um excerto de código em assembly que defina um símbolo \'a\' correspondente a um vetor de bytes de tamanho mínimo 32 ou igual ao valor inteiro associado ao símbolo \'tamanho\' (defina esse também). O símbolo \'a\' deve estar dentro da seção \'vetores\' e deve ser conhecido pelo linker.", ans: <div><p>Uma solução para esse problema é:</p><p>.set tamanho, 36</p><p>.section .vetores</p><p>.global a</p><p>.if tamanho {'<'} 32</p><p>a:.ds.b 32</p><p>.else</p><p>a:.ds.b tamanho</p><p>.endif</p></div>};
+
 
 const MacrosRepeticoes = () => {
     return (
@@ -40,6 +49,11 @@ const MacrosRepeticoes = () => {
                 verificação de algum erro ou inconsistência.
             </p>
             <img className="center-image" src={macros_repeticoes_4} alt="macrosRepeticoes 4" />
+            <p className="espaco-paragrafo"></p>
+            <div>
+            <Quiz {...Question1}/>
+            </div>
+
         </div>
     );
 };
