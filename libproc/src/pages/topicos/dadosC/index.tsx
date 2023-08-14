@@ -6,7 +6,7 @@ const DadosC = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Dados em C</h3>
                 <p className="espaco-paragrafo">
                     Variáveis declaradas em C são alocadas pelo compilador em diferentes

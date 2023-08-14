@@ -5,7 +5,7 @@ import execucao_processo_1 from './imgs/execucao-processo_1.png';
 const ExecucaoControleProcesso = () => {
     return (
         <>
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Execução e controle do processo</h3>
                 <ul className="alinha-item">
                     <li>

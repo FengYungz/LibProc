@@ -8,7 +8,7 @@ const CoreTimer = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>
                     Core timer
                 </h3>

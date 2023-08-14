@@ -16,7 +16,7 @@ const InstrucoesSalto = () => {
   return (
     <>
       <Header />
-      <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+      <div className="content-container">
         <h3>Instruções de Salto</h3>
         <p>
           As instruções de salto alteram o valor do contador de programa (R15),

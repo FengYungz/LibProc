@@ -5,7 +5,7 @@ const Símbolos = () => {
     return (
         <>
 
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Símbolos</h3>
                 <p className="espaco-paragrafo">
                     Símbolos são sequências de caracteres alfanuméricos, incluindo o ponto

@@ -18,7 +18,7 @@ const AssemblerGNU = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>GNU assembler (as)</h3>
                 <p className="espaco-paragrafo">
                     O formato geral do comando do assembler é

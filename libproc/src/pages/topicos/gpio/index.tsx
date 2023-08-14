@@ -25,6 +25,7 @@ const GPIO = () => {
             <Header />
             <p className="espaco-paragrafo"></p>
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Portas de Entrada e Saída (GPIO)</h3>
                 <p className="espaco-paragrafo">
 
@@ -110,6 +111,7 @@ const GPIO = () => {
                     <Quiz {...Question1}/>
                     </div>
                 </p>
+            </div>
             </div>
         </>
     );

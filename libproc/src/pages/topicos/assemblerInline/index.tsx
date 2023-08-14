@@ -10,7 +10,7 @@ const AssemblerInline = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Assembler inline</h3>
                 <p className="espaco-paragrafo">
                     O compilador gcc permite integrar código em assembler diretamente no

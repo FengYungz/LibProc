@@ -48,6 +48,7 @@ import Interrupcoes from '../pages/topicos/interrupcoes';
 import PerifericosAuxiliar from '../pages/topicos/perifericoAuxiliar';
 import CoreTimer from '../pages/topicos/coreTimer';
 import ExecucaoProcessoAgregado from '../pages/topicos/execucaoProcessoAgregado';
+import Links from '../pages/topicos/links';
 
 const AppRoutes = () => {
     return (
@@ -100,6 +101,7 @@ const AppRoutes = () => {
                 <Route path='/topicos/interrupcoes' element={<Interrupcoes />} />
                 <Route path='/topicos/perifericoAuxiliar' element={<PerifericosAuxiliar />} />
                 <Route path='/topicos/coreTimer' element={<CoreTimer />} />
+                <Route path='/topicos/links' element={<Links />} />
             </Routes>
         </BrowserRouter>
     );

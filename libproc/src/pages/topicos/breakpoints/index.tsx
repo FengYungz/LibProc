@@ -7,7 +7,7 @@ import breakpoints_3 from './imgs/breakpoints_3.png';
 const Breakpoints = () => {
     return (
         <>
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Breakpoints</h3>
                 <p className="espaco-paragrafo">
                     <h4>Comando "break"</h4>

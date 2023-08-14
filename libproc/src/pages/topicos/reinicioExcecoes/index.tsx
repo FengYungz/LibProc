@@ -21,59 +21,66 @@ const ReinicioExcecoes = () => {
   return (
     <div>
       <Header />
-      <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
-      <h3>Reinício, Exceções e Interrupções</h3>
-      <p className="espaco-paragrafo">
-        Ao ser ligada a energia ou ao ser detectado o sinal de reset, o processador
-        é iniciado no modo supervisor (SVR ou o modo mais privilegiado disponível na
-        arquitetura) e o contador de programa (r15) é carregado com o valor zero. A
-        instrução que se encontra nesse endereço será portanto a primeira instrução a
-        ser executada, seguindo-se a trajetória das instruções a partir dessa primeira
-        instrução.
-        A sequência das instruções executadas pelo processador pode no entanto
-        ser quebrada por determinados eventos síncronos (“exceções”) ou assíncronos
-        (“interrupções”). Eventos síncronos, causados pela própria execução de uma
-        instrução, ocasionam o abandono da execução dessa instrução (o que pode
-        acontecer em diversos estágios da sua execução) e o desvio para um endereço
-        específico da memória; processo semelhante acontece com eventos assíncronos,
-        causados por sinais provenientes de dispositivos externos à CPU (por exemplo,
-        periféricos, outros processadores, etc.), denominados interrupções. Neste
-        último caso, porém, a instrução corrente é executada até o seu final e somente
-        então o desvio é realizado. Tanto as exceções quanto as interrupções alteram o
-        modo de execução do processador.
-        Assim como o ponto de entrada do reinício (reset), os demais endereços
-        alvo das exceções e interrupções são definidos na área ocupando as 32 primeiras
-        posições da memória física, denominada vetor de interrupções:
-      </p>
-      <img className="center-image" src={reinicio_excecoes_1} alt="ReinicioExcecoes 1" />
-      <p className="espaco-paragrafo"></p>
-      <p className="espaco-paragrafo">
-        Observe que existem somente quatro posições de memória reservadas
-        para cada vetor, o suficiente para apenas uma instrução de máquina do ARM.
-        Sendo assim, na quase totalidade dos casos, essas posições de memória vão
-        conter uma instrução de salto (instrução branch) ou de atualização do registrador
-        r15 (instrução load).
-        Essa tabela mostra também relações de prioridade (quanto menor o
-        número, mais prioritário): o processador executando no modo usuário pode ser
-        interrompido por qualquer evento, digamos, uma interrupção (prioridade 4),
-        mudando para o modo IRQ. Ainda executando no modo IRQ, o processador
-        poderia ser interrompido por uma interrupção rápida (prioridade 3), e assim por
-        diante. O sinal de reset tem a maior prioridade e não pode ser mascarado.
-        A ocorrência de uma exceção ou interrupção faz com que o processador
-        execute as seguintes operações:
-        <ul className="alinha-item">
-          <li>
-            1. No caso de interrupções, a instrução atual é executada até o final,
-            enquanto são inseridos “nops” no pipeline;
-          </li>
-          <li>
-            2. O pipeline é esvaziado;
-          </li>
-          <li>
-            3. O estado atual dos flags do processador (cpsr), incluindo os bits
-            especificando o modo atual é salvo no registrador spsr e o contador de
-            programa (r15) é salvo no registrador r14, nas instâncias
-            correspondentes ao modo de destino;
+      <div className="content-container">
+        <h3>Reinício, Exceções e Interrupções</h3>
+        <p className="espaco-paragrafo">
+          Ao ser ligada a energia ou ao ser detectado o sinal de reset, o processador
+          é iniciado no modo supervisor (SVR ou o modo mais privilegiado disponível na
+          arquitetura) e o contador de programa (r15) é carregado com o valor zero. A
+          instrução que se encontra nesse endereço será portanto a primeira instrução a
+          ser executada, seguindo-se a trajetória das instruções a partir dessa primeira
+          instrução.
+          A sequência das instruções executadas pelo processador pode no entanto
+          ser quebrada por determinados eventos síncronos (“exceções”) ou assíncronos
+          (“interrupções”). Eventos síncronos, causados pela própria execução de uma
+          instrução, ocasionam o abandono da execução dessa instrução (o que pode
+          acontecer em diversos estágios da sua execução) e o desvio para um endereço
+          específico da memória; processo semelhante acontece com eventos assíncronos,
+          causados por sinais provenientes de dispositivos externos à CPU (por exemplo,
+          periféricos, outros processadores, etc.), denominados interrupções. Neste
+          último caso, porém, a instrução corrente é executada até o seu final e somente
+          então o desvio é realizado. Tanto as exceções quanto as interrupções alteram o
+          modo de execução do processador.
+          Assim como o ponto de entrada do reinício (reset), os demais endereços
+          alvo das exceções e interrupções são definidos na área ocupando as 32 primeiras
+          posições da memória física, denominada vetor de interrupções:
+        </p>
+        <img className="center-image" src={reinicio_excecoes_1} alt="ReinicioExcecoes 1" />
+        <p className="espaco-paragrafo">
+          Observe que existem somente quatro posições de memória reservadas
+          para cada vetor, o suficiente para apenas uma instrução de máquina do ARM.
+          Sendo assim, na quase totalidade dos casos, essas posições de memória vão
+          conter uma instrução de salto (instrução branch) ou de atualização do registrador
+          r15 (instrução load).
+          Essa tabela mostra também relações de prioridade (quanto menor o
+          número, mais prioritário): o processador executando no modo usuário pode ser
+          interrompido por qualquer evento, digamos, uma interrupção (prioridade 4),
+          mudando para o modo IRQ. Ainda executando no modo IRQ, o processador
+          poderia ser interrompido por uma interrupção rápida (prioridade 3), e assim por
+          diante. O sinal de reset tem a maior prioridade e não pode ser mascarado.
+          A ocorrência de uma exceção ou interrupção faz com que o processador
+          execute as seguintes operações:
+          <ul className="alinha-item">
+            <li>
+              1. No caso de interrupções, a instrução atual é executada até o final,
+              enquanto são inseridos “nops” no pipeline;
+            </li>
+            <li>
+              2. O pipeline é esvaziado;
+            </li>
+            <li>
+              3. O estado atual dos flags do processador (cpsr), incluindo os bits
+              especificando o modo atual é salvo no registrador spsr e o contador de
+              programa (r15) é salvo no registrador r14, nas instâncias
+              correspondentes ao modo de destino;
+              </li>
+            <li>
+              4. O modo do processador é modificado para o modo correspondente ao
+              evento;
+            </li>
+            <li >
+              5. O contador de programa (r15) é carregado com o endereço do vetor
+              correspondente ao evento.
             </li>
           <li>
             4. O modo do processador é modificado para o modo correspondente ao

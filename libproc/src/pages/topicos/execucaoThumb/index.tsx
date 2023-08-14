@@ -7,7 +7,7 @@ const ExecucaoConjuntoInstrucoesThumb = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Execução do conjunto de instruções Thumb</h3>
                 <p className="espaco-paragrafo">
                     Os processadores ARM normalmente interpretam as instruções thumb

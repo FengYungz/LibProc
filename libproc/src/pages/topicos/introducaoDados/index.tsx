@@ -7,7 +7,7 @@ import introducao_dados_3 from './imgs/introducao-dados_3.png';
 const IntroducaoDados = () => {
     return (
         <>
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Introdução de dados</h3>
                 <p className="espaco-paragrafo">
                     Um conjunto arbitrário de bytes pode ser inserido no código objeto pelo assembler usando as diretivas com nomes de tipos ( .byte , .word , .hword , .int , .float , etc.). Esses comandos alocam espaço suficiente

@@ -7,7 +7,7 @@ const RuntimeGCC = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>O runtime do gcc</h3>
                 <p className="espaco-paragrafo">
                     As funções do runtime do gcc estão definidas no arquivo

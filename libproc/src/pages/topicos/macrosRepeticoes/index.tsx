@@ -17,7 +17,7 @@ const Question1: Question = {quest: "Escreva um excerto de código em assembly q
 const MacrosRepeticoes = () => {
     return (
         <>
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Macros e repetições</h3>
                 <p className="espaco-paragrafo">
                     Macros podem ser criadas usando a diretiva .macro. Podem ser

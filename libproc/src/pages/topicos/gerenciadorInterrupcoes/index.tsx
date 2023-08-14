@@ -21,6 +21,7 @@ const GerenciadorInterrupcoes = () => {
             <Header />
             <p className="espaco-paragrafo"></p>
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Gerenciador de Interrupções</h3>
 
                 <p className="espaco-paragrafo">O gerenciador de interrupções do S3C4510B pode reconhecer 21 fontes
@@ -90,6 +91,7 @@ const GerenciadorInterrupcoes = () => {
                 <div>
                 <Quiz {...Question1}/>
                 </div> 
+            </div>
             </div>
         </>
     );

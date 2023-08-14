@@ -26,6 +26,7 @@ const PlacaDesenvolvimento = () => {
             <Header />
             <p className="espaco-paragrafo"></p>
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Placa de desenvolvimento Evaluator-7T</h3>
                 <p className="espaco-paragrafo">
                     A placa de desenvolvimento utilizada no laboratório é baseada no
@@ -120,6 +121,7 @@ const PlacaDesenvolvimento = () => {
                 <div>
                 <MultipleChoiceQuestion {...Question1}/>
                 </div>
+            </div>
             </div>
         </>
     );

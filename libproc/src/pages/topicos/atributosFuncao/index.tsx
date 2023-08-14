@@ -9,7 +9,7 @@ const AtributosFuncaoGCC = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Atributos de função no GCC</h3>
                 <p className="espaco-paragrafo">
                     O compilador C do GCC permite marcar funções com atributos especiais,

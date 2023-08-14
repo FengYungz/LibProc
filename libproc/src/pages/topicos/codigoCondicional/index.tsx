@@ -5,7 +5,7 @@ import codigo_condicional_1 from './imgs/codigo-condicional_1.png';
 const CodigoCondicional = () => {
     return (
         <>
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Código condicional</h3>
                 <p className="espaco-paragrafo">
                     As diretivas

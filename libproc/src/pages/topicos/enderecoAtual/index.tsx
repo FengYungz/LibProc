@@ -5,7 +5,7 @@ import endereco_atual_1 from './imgs/endereco-atual_1.png';
 const PosicionarEnderecoAtual = () => {
     return (
         <>
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Posicionar o endereço atual</h3>
                 <p className="espaco-paragrafo">
                     As diretivas

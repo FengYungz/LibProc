@@ -276,5 +276,15 @@
                 "link": "/topicos/coreTimer"
             }
         ]
+    },
+    {
+        "title": "Material de Apoio",
+        "items": [
+            {
+                "icon": "BiBookBookmark",
+                "text": "Links Úteis",
+                "link": "/topicos/links"
+            }
+        ]
     }
 ]

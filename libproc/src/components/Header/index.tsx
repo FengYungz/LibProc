@@ -6,13 +6,17 @@ import Sidebar from '../Sidebar'
 const Header = () => {
   const [sidebar, setSidebar] = useState(false)
 
-  const showSiderbar = (state: boolean) => setSidebar(state)
+  const showSidebar = (state: boolean) => setSidebar(state)
 
   return (
-    <Container>
-      <FaBars onClick= {() => showSiderbar(!sidebar)} />
-      {sidebar && <Sidebar changeState={showSiderbar} active={sidebar} />}
-    </Container>
+    <div>
+      <Container>
+        <FaBars onClick={() => showSidebar(!sidebar)} />
+        {sidebar && <Sidebar changeState={showSidebar} active={sidebar} />}
+      </Container>
+      <div style={{ paddingTop: '100px' }}>
+      </div>
+    </div>
   )
 }
 

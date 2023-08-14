@@ -7,7 +7,7 @@ const InstrucoesAcessoMemoria = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>Instruções de acesso à memória (Load/Store)</h3>
                 <p className="espaco-paragrafo">
                     As instruções load e store do conjunto thumb usam um registrador

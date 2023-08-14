@@ -21,7 +21,7 @@ const AmbienteGNU = () => {
     return (
         <>
             <Header />
-            <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
+            <div className="content-container">
                 <h3>
                     Instalação do ambiente de desenvolvimento
                 </h3>
