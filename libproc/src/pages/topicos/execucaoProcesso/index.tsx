@@ -1,12 +1,10 @@
 import React from 'react';
 import '../../../assets/styles/global.css';
 import execucao_processo_1 from './imgs/execucao-processo_1.png';
-import Header from "../../../components/Header/index";
 
 const ExecucaoControleProcesso = () => {
     return (
         <>
-            <Header />
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Execução e controle do processo</h3>
                 <ul className="alinha-item">

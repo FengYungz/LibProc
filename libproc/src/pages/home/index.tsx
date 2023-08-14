@@ -5,8 +5,8 @@ function Page(){
     return(
         <>
         <Header />
-        <h1>LIBPROC</h1>
-        <h2>Sejam bem-vindos ao acervo de teoria e questões da disciplina Laboratório de Processadores!</h2>
+        <h1 style={{ textAlign: "center" }}>LIBPROC</h1>
+        <h2 style={{ textAlign: "center" }}>Teoria e questões da disciplina Laboratório de Processadores!</h2>
         </>
     )
 }

@@ -1,12 +1,10 @@
 import React from 'react';
 import '../../../assets/styles/global.css';
 import codigo_condicional_1 from './imgs/codigo-condicional_1.png';
-import Header from "../../../components/Header/index";
 
 const CodigoCondicional = () => {
     return (
         <>
-            <Header />
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Código condicional</h3>
                 <p className="espaco-paragrafo">

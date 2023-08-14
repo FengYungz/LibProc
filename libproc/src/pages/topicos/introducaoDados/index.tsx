@@ -3,12 +3,10 @@ import '../../../assets/styles/global.css';
 import introducao_dados_1 from './imgs/introducao-dados_1.png';
 import introducao_dados_2 from './imgs/introducao-dados_2.png';
 import introducao_dados_3 from './imgs/introducao-dados_3.png';
-import Header from "../../../components/Header/index";
 
 const IntroducaoDados = () => {
     return (
         <>
-            <Header />
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Introdução de dados</h3>
                 <p className="espaco-paragrafo">

@@ -1,12 +1,10 @@
 import React from 'react';
 import '../../../assets/styles/global.css';
 import endereco_atual_1 from './imgs/endereco-atual_1.png';
-import Header from "../../../components/Header/index";
 
 const PosicionarEnderecoAtual = () => {
     return (
         <>
-            <Header />
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Posicionar o endereço atual</h3>
                 <p className="espaco-paragrafo">

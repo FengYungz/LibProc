@@ -1,12 +1,10 @@
 import React from 'react';
 import '../../../assets/styles/global.css';
 import expressoes_1 from './imgs/expressoes_1.png';
-import Header from "../../../components/Header/index";
 
 const Expressoes = () => {
     return (
         <>
-            <Header />
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Expressões</h3>
                 <p className="espaco-paragrafo">

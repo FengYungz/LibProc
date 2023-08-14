@@ -3,19 +3,17 @@ import '../../../assets/styles/global.css';
 import breakpoints_1 from './imgs/breakpoints_1.png';
 import breakpoints_2 from './imgs/breakpoints_2.png';
 import breakpoints_3 from './imgs/breakpoints_3.png';
-import Header from "../../../components/Header/index";
 
 const Breakpoints = () => {
     return (
         <>
-            <Header />
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Breakpoints</h3>
                 <p className="espaco-paragrafo">
                     <h4>Comando "break"</h4>
                     <ul className="alinha-item">
                         <li>
-                            O comando “break "local"” ou “b "local"” introduz um novo ponto de
+                            O comando “break "local" ou “b "local" introduz um novo ponto de
                             parada (breakpoint) no local especificado.
                             O parâmetro "local" pode ser um endereço em memória (com um asterisco
                             à frente), o nome de uma função, um rótulo, um número de linha referente

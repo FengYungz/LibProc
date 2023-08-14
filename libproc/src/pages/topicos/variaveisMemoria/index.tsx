@@ -5,13 +5,11 @@ import variaveis_memoria_2 from './imgs/variaveis-memoria_2.png';
 import variaveis_memoria_3 from './imgs/variaveis-memoria_3.png';
 import variaveis_memoria_4 from './imgs/variaveis-memoria_4.png';
 import variaveis_memoria_5 from './imgs/variaveis-memoria_5.png';
-import Header from "../../../components/Header/index";
 
 
 const VariaveisConteudoMemoria = () => {
     return (
         <>
-            <Header />
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Variáveis e conteúdo da memória</h3>
                 <p className="espaco-paragrafo">

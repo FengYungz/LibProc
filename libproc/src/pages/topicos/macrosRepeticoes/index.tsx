@@ -5,7 +5,6 @@ import macros_repeticoes_2 from './imgs/macros-repeticoes_2.png';
 import macros_repeticoes_3 from './imgs/macros-repeticoes_3.png';
 import macros_repeticoes_4 from './imgs/macros-repeticoes_4.png';
 import Quiz from "../quiz";
-import Header from "../../../components/Header/index";
 
 interface Question{
   quest: string;
@@ -18,7 +17,6 @@ const Question1: Question = {quest: "Escreva um excerto de código em assembly q
 const MacrosRepeticoes = () => {
     return (
         <>
-            <Header />
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Macros e repetições</h3>
                 <p className="espaco-paragrafo">

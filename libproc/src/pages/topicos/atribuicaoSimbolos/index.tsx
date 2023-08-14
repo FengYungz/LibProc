@@ -1,12 +1,10 @@
 import React from 'react';
 import '../../../assets/styles/global.css';
 import atribuicao_simbolos_1 from './imgs/atribuicao-simbolos_1.png';
-import Header from "../../../components/Header/index";
 
 const AtribuicaoSimbolos = () => {
     return (
         <>
-            <Header />
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Atribuição de Símbolos</h3>
                 <p className="espaco-paragrafo">

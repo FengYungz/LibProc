@@ -1,11 +1,10 @@
 import React from 'react';
 import '../../../assets/styles/global.css';
-import Header from "../../../components/Header/index";
 
 const Símbolos = () => {
     return (
         <>
-            <Header />
+
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Símbolos</h3>
                 <p className="espaco-paragrafo">

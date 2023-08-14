@@ -3,7 +3,6 @@ import '../../../assets/styles/global.css';
 import interface_usuario_1 from './imgs/interface-usuario_1.png';
 import interface_usuario_2 from './imgs/interface-usuario_2.png';
 import Quiz from "../quiz";
-import Header from "../../../components/Header/index";
 
 interface Question{
   quest: string;
@@ -16,7 +15,6 @@ const Question1: Question = {quest: "Defina o que fazem os comandos \'break f1+5
 const ControleInterfaceUsuario = () => {
     return (
         <>
-            <Header />
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Controle da interface do usuário</h3>
                 <p className="espaco-paragrafo">

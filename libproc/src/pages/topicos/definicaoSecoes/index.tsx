@@ -1,12 +1,10 @@
 import React from 'react';
 import '../../../assets/styles/global.css';
 import definicao_secoes_1 from './imgs/definicao-secoes_1.png';
-import Header from "../../../components/Header/index";
 
 const DefinicaoSecoes = () => {
     return (
         <>
-            <Header />
             <div className="font-roboto-condensed" style={{ lineHeight: '1.5' }}>
                 <h3>Definição de Seções</h3>
                 <p className="espaco-paragrafo">
