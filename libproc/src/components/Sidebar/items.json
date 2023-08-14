@@ -47,46 +47,13 @@
                 "text": "GNU assembler (as)",
                 "link": "/topicos/assembler"
             },
+
             {
                 "icon": "BiBookBookmark",
-                "text": "Símbolos",
-                "link": "/topicos/simbolos"
+                "text": "Formatos dos arquivos-fonte",
+                "link": "/topicos/formatoArquivosFonte"
             },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Expressões",
-                "link": "/topicos/expressoes"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Definição de Seções",
-                "link": "/topicos/definicaoSecoes"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Atribuição de Símbolos",
-                "link": "/topicos/atribuicaoSimbolos"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Introdução de dados",
-                "link": "/topicos/introducaoDados"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Código condicional",
-                "link": "/topicos/codigoCondicional"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Posicionar o endereço atual",
-                "link": "/topicos/enderecoAtual"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Macros e repetições",
-                "link": "/topicos/macrosRepeticoes"
-            },
+
             {
                 "icon": "BiBookBookmark",
                 "text": "GNU ld",
@@ -97,25 +64,11 @@
                 "text": "O Depurador do Gnu (gdb)",
                 "link": "/topicos/gdb"
             },
+
             {
                 "icon": "BiBookBookmark",
                 "text": "Execução e controle do processo",
-                "link": "/topicos/execucaoProcesso"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Breakpoints",
-                "link": "/topicos/breakpoints"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Variáveis e conteúdo da memória",
-                "link": "/topicos/variaveisMemoria"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Controle da interface do usuário",
-                "link": "/topicos/interfaceUsuario"
+                "link": "/topicos/execucaoProcessoAgregado"
             }
         ]
     },

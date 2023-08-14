@@ -17,20 +17,9 @@ import ConjuntoInstrucoesThumb2 from '../pages/topicos/thumb2';
 import ExecucaoConjuntoInstrucoesThumb from '../pages/topicos/execucaoThumb';
 import AmbienteGNU from '../pages/topicos/ambienteGnu';
 import AssemblerGNU from '../pages/topicos/assembler';
-import Simbolos from '../pages/topicos/simbolos';
-import Expressoes from '../pages/topicos/expressoes';
-import DefinicaoSecoes from '../pages/topicos/definicaoSecoes';
-import AtribuicaoSimbolos from '../pages/topicos/atribuicaoSimbolos';
-import IntroducaoDados from '../pages/topicos/introducaoDados';
-import CodigoCondicional from '../pages/topicos/codigoCondicional';
-import PosicionarEnderecoAtual from '../pages/topicos/enderecoAtual';
-import MacrosRepeticoes from '../pages/topicos/macrosRepeticoes';
+import FormatoArquivosFonte from '../pages/topicos/formatoArquivosFonte';
 import GNULD from '../pages/topicos/gnuld';
 import DepuradorGNU from '../pages/topicos/gdb';
-import ExecucaoControleProcesso from '../pages/topicos/execucaoProcesso';
-import Breakpoints from '../pages/topicos/breakpoints';
-import VariaveisConteudoMemoria from '../pages/topicos/variaveisMemoria';
-import ControleInterfaceUsuario from '../pages/topicos/interfaceUsuario';
 import PlacaDesenvolvimento from '../pages/topicos/placaDesenvolvimento';
 import PortasEntradaSaidaGPIO from '../pages/topicos/gpio';
 import GerenciadorInterrupcoes from '../pages/topicos/gerenciadorInterrupcoes';
@@ -58,6 +47,7 @@ import GPIOs from '../pages/topicos/gpios';
 import Interrupcoes from '../pages/topicos/interrupcoes';
 import PerifericosAuxiliar from '../pages/topicos/perifericoAuxiliar';
 import CoreTimer from '../pages/topicos/coreTimer';
+import ExecucaoProcessoAgregado from '../pages/topicos/execucaoProcessoAgregado';
 
 const AppRoutes = () => {
     return (
@@ -79,20 +69,10 @@ const AppRoutes = () => {
                 <Route path='/topicos/execucaoThumb' element={<ExecucaoConjuntoInstrucoesThumb />} />
                 <Route path='/topicos/ambienteGnu' element={<AmbienteGNU />} />
                 <Route path='/topicos/assembler' element={<AssemblerGNU />} />
-                <Route path='/topicos/simbolos' element={<Simbolos />} />
-                <Route path='/topicos/expressoes' element={<Expressoes />} />
-                <Route path='/topicos/definicaoSecoes' element={<DefinicaoSecoes />} />
-                <Route path='/topicos/atribuicaoSimbolos' element={<AtribuicaoSimbolos />} />
-                <Route path='/topicos/introducaoDados' element={<IntroducaoDados />} />
-                <Route path='/topicos/codigoCondicional' element={<CodigoCondicional />} />
-                <Route path='/topicos/enderecoAtual' element={<PosicionarEnderecoAtual />} />
-                <Route path='/topicos/macrosRepeticoes' element={<MacrosRepeticoes />} />
+                <Route path='/topicos/formatoArquivosFonte' element={<FormatoArquivosFonte />} />
                 <Route path='/topicos/gnuld' element={<GNULD />} />
                 <Route path='/topicos/gdb' element={<DepuradorGNU />} />
-                <Route path='/topicos/execucaoProcesso' element={<ExecucaoControleProcesso />} />
-                <Route path='/topicos/breakpoints' element={<Breakpoints />} />
-                <Route path='/topicos/variaveisMemoria' element={<VariaveisConteudoMemoria />} />
-                <Route path='/topicos/interfaceUsuario' element={<ControleInterfaceUsuario />} />
+                <Route path='/topicos/execucaoProcessoAgregado' element={<ExecucaoProcessoAgregado />} />
                 <Route path='/topicos/placaDesenvolvimento' element={<PlacaDesenvolvimento />} />
                 <Route path='/topicos/gpio' element={<PortasEntradaSaidaGPIO />} />
                 <Route path='/topicos/gerenciadorInterrupcoes' element={<GerenciadorInterrupcoes />} />
@@ -120,7 +100,6 @@ const AppRoutes = () => {
                 <Route path='/topicos/interrupcoes' element={<Interrupcoes />} />
                 <Route path='/topicos/perifericoAuxiliar' element={<PerifericosAuxiliar />} />
                 <Route path='/topicos/coreTimer' element={<CoreTimer />} />
-
             </Routes>
         </BrowserRouter>
     );
