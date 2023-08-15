@@ -8,6 +8,13 @@ import gpios_5 from './imgs/gpios_5.png';
 import gpios_6 from './imgs/gpios_6.png';
 import gpios_7 from './imgs/gpios_7.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:39};
 
 const GPIOs = () => {
     return (
@@ -163,6 +170,7 @@ const GPIOs = () => {
 
                 <img className="center-image" src={gpios_7} alt="GPIOs 7" />
             </div>
+            <Footer {...index} />
         </>
     );
 };

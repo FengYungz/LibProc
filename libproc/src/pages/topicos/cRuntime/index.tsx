@@ -2,7 +2,14 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import c_runtime_1 from './imgs/c-runtime_1.png';
 import Header from "../../../components/Header/index";
-import MultipleChoiceQuestion from '../multipleChoice'
+import MultipleChoiceQuestion from '../multipleChoice';
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:19};
 
 interface Question {
   question: string;
@@ -78,6 +85,7 @@ const CRuntime = () => {
                 <MultipleChoiceQuestion {...Question1} />
                 </div>
             </div>
+            <Footer {...index} />
         </>
     );
 };

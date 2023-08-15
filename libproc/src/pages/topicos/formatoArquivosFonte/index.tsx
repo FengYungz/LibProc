@@ -9,6 +9,13 @@ import CodigoCondicional from '../codigoCondicional';
 import EnderecoAtual from '../enderecoAtual';
 import MacrosRepeticoes from '../macrosRepeticoes';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:7};
 
 const FormatoArquivosFonte = () => {
     return (
@@ -24,6 +31,7 @@ const FormatoArquivosFonte = () => {
                 <EnderecoAtual />
                 <MacrosRepeticoes />
             </div>
+            <Footer {...index} />
         </>
     );
 };

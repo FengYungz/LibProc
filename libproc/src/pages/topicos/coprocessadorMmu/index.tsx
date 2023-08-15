@@ -9,6 +9,13 @@ import coprocessador_mmu_6 from './imgs/coprocessador-mmu_6.png';
 import coprocessador_mmu_7 from './imgs/coprocessador-mmu_7.png';
 import coprocessador_mmu_8 from './imgs/coprocessador-mmu_8.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:37};
 
 const CoprocessadorMmu = () => {
     return (
@@ -184,6 +191,7 @@ const CoprocessadorMmu = () => {
 
                 <img className="center-image" src={coprocessador_mmu_8} alt="coprocessadorMmu 8" />
             </div>
+            <Footer {...index} />
         </>
     );
 };

@@ -5,7 +5,14 @@ import arquitetura_3 from './imgs/arquitetura_3.png';
 import arquitetura_4 from './imgs/arquitetura_4.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
-import MultipleChoiceQuestion from '../multipleChoice'
+import MultipleChoiceQuestion from '../multipleChoice';
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:0};
 
 interface Question {
   question: string;
@@ -16,6 +23,7 @@ interface Question {
 }
 
 const Question1: Question = { question: "Considerando o modelo de pipeline da arquitetura original do processador ARM, endereçamento por número de bytes e que não existam instruções de salto no programa em questão, quando uma instrução presente no endereço E1 está sendo executada qual o valor do registrador R15? ", options: ["R15 = E1", "R15 = E1 + 8", "R15 = E1 + 4", "R15 = E1 + 2"], answer:1, correctMessage:<div><p>A resposta está correta!</p><p>A arquitetura ARM original possui um pipeline de 3 estágios (Fetch -{'>'} Decode -{'>'} Execute), portanto, quando uma instrução está no estágio de execução o program counter (registrador R15) já está 2 instruções à frente da instrução inicial (8 posições de memória, já que cada instrução possui 4 bytes)!</p></div>, incorrectMessage:<div><p>A resposta correta seria R15 = E1 +8.</p><p>A arquitetura ARM original possui um pipeline de 3 estágios (Fetch -{'>'} Decode -{'>'} Execute), portanto, quando uma instrução está no estágio de execução o program counter (registrador R15) já está 2 instruções à frente da instrução inicial (8 posições de memória, já que cada instrução possui 4 bytes)!</p></div>};
+
 
 const Arquitetura = () => {
   return (
@@ -159,6 +167,7 @@ const Arquitetura = () => {
           <MultipleChoiceQuestion {...Question1} />
         </div>
       </div>
+      <Footer {...index}/>
     </>
   );
 };

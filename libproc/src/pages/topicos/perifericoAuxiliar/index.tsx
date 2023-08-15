@@ -5,6 +5,13 @@ import perifericos_auxiliar_2 from './imgs/perifericos-auxiliar_2.png';
 import perifericos_auxiliar_3 from './imgs/perifericos-auxiliar_3.png';
 import perifericos_auxiliar_4 from './imgs/perifericos-auxiliar_4.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:41};
 
 const PerifericosAuxiliar = () => {
     return (
@@ -85,6 +92,7 @@ const PerifericosAuxiliar = () => {
 
                 <img className="center-image" src={perifericos_auxiliar_4} alt="perifericos_auxiliar 4" />
             </div>
+            <Footer {...index} />
         </>
     );
 };

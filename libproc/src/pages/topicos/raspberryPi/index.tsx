@@ -2,6 +2,13 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import raspberry_pi_1 from './imgs/raspberry-pi_1.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:32};
 
 const RaspberryPi = () => {
     return (
@@ -60,6 +67,7 @@ const RaspberryPi = () => {
                     vamos executar as aplicações diretamente sobre o hardware (“bare metal”).
                 </p>
             </div>
+            <Footer {...index} />
         </>
     );
 };

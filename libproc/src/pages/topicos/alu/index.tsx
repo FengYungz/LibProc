@@ -12,6 +12,14 @@ import alu_10 from './imgs/alu_10.png';
 import '../../../assets/styles/global.css';
 import MultipleChoiceQuestion from '../multipleChoice'
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:3};
+
 interface Question {
   question: string;
   options: string[];
@@ -205,6 +213,7 @@ const ALU = () => {
                     <MultipleChoiceQuestion {...Question1} />
                 </div>
             </div>
+            <Footer {...index}/>
         </>
     );
 };

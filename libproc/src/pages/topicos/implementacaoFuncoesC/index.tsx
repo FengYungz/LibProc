@@ -4,7 +4,14 @@ import implementacao_funcoes_c_1 from './imgs/implementacao-funcoes-c_1.png';
 import implementacao_funcoes_c_2 from './imgs/implementacao-funcoes-c_2.png';
 import implementacao_funcoes_c_3 from './imgs/implementacao-funcoes-c_3.png';
 import Header from "../../../components/Header/index";
-import MultipleChoiceQuestion from '../multipleChoice'
+import MultipleChoiceQuestion from '../multipleChoice';
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:22};
 
 interface Question {
   question: string;
@@ -170,6 +177,7 @@ const ImplementacaoFuncoesC = () => {
                 <MultipleChoiceQuestion {...Question1} />
                 </div>
             </div>
+            <Footer {...index} />
         </>
     );
 };

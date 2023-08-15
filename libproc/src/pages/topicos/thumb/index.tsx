@@ -2,6 +2,13 @@ import React from 'react';
 import thumb_1 from './imgs/thumb_1.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:26};
 
 const Thumb = () => {
     return (
@@ -70,6 +77,7 @@ const Thumb = () => {
                     <img className="center-image" src={thumb_1} alt="Thumb 1" />
                 </p>
             </div>
+            <Footer {...index} />
         </>
     );
 };

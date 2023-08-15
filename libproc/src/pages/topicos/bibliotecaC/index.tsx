@@ -2,6 +2,13 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import biblioteca_c_1 from './imgs/biblioteca-c_1.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:20};
 
 const BibliotecaC = () => {
     return (
@@ -85,6 +92,7 @@ const BibliotecaC = () => {
                 </p>
                 
             </div>
+            <Footer {...index} />
         </>
     );
 };

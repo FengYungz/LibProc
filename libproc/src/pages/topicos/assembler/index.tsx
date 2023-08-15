@@ -5,6 +5,13 @@ import assembler_2 from './imgs/assembler_2.png';
 import assembler_3 from './imgs/assembler_3.png';
 import Quiz from "../quiz";
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:6};
 
 interface Question{
   quest: string;
@@ -72,6 +79,7 @@ const AssemblerGNU = () => {
                 <Quiz {...Question1}/>
                 </div>
             </div >
+            <Footer {...index} />
         </>
     );
 };

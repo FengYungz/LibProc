@@ -8,6 +8,13 @@ import ambiente_gnu_5 from './imgs/ambiente-gnu_5.png';
 import ambiente_gnu_6 from './imgs/ambiente-gnu_6.png';
 import Quiz from "../quiz";
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:5};
 
 interface Question{
   quest: string;
@@ -211,6 +218,7 @@ const AmbienteGNU = () => {
                     <Quiz {...Question1}/>
                 </div>
             </div>
+            <Footer {...index} />
         </>
     );
 };

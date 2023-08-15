@@ -4,6 +4,13 @@ import conjuntoInstrucoes_2 from './imgs/conjunto-instrucoes_2.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
 import Quiz from "../quiz";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:1};
 
 interface Question{
   quest: string;
@@ -57,6 +64,7 @@ const ConjuntoInstrucoes = () => {
           <Quiz {...Question1}/>
         </div>
       </div>
+      <Footer {...index}/>
     </>
   );
 };

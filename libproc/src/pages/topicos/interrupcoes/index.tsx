@@ -7,6 +7,13 @@ import interrupcoes_4 from './imgs/interrupcoes_4.png';
 import interrupcoes_5 from './imgs/interrupcoes_5.png';
 import interrupcoes_6 from './imgs/interrupcoes_6.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:40};
 
 const Interrupcoes = () => {
     return (
@@ -142,6 +149,7 @@ const Interrupcoes = () => {
 
                 </ul>
             </div>
+            <Footer {...index} />
         </>
     );
 };

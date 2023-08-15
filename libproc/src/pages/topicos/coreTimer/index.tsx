@@ -3,6 +3,13 @@ import '../../../assets/styles/global.css';
 import core_timer_1 from './imgs/core-timer_1.png';
 import core_timer_2 from './imgs/core-timer_2.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:42};
 
 const CoreTimer = () => {
     return (
@@ -58,6 +65,7 @@ const CoreTimer = () => {
 
                 <img className="center-image" src={core_timer_2} alt="core_timer 2" />
             </div>
+            <Footer {...index} />
         </>
     );
 };

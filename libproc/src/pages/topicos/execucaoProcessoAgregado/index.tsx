@@ -5,6 +5,13 @@ import Breakpoints from '../breakpoints';
 import VariaveisConteudoMemoria from '../variaveisMemoria';
 import ControleInterfaceUsuario from '../interfaceUsuario';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:10};
 
 const ExecucaoProcessoAgregado = () => {
     return (
@@ -16,6 +23,7 @@ const ExecucaoProcessoAgregado = () => {
                 <VariaveisConteudoMemoria />
                 <ControleInterfaceUsuario />
             </div>
+            <Footer {...index}/>
         </>
     );
 };

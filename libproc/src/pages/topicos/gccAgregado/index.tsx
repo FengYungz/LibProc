@@ -3,6 +3,13 @@ import '../../../assets/styles/global.css';
 import GNUCompiler from '../gcc';
 import AmbienteDesenvolvimento from '../ambienteDesenvolvimento';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:23};
 
 const GNUCompilerAgregado = () => {
     return (
@@ -12,6 +19,7 @@ const GNUCompilerAgregado = () => {
                 <GNUCompiler />
                 <AmbienteDesenvolvimento />
             </div>
+            <Footer {...index} />
         </>
     );
 };

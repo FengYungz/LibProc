@@ -5,7 +5,15 @@ import reinicio_excecoes_3 from './imgs/reinicio-excecoes_3.png';
 import reinicio_excecoes_4 from './imgs/reinicio-excecoes_4.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
-import MultipleChoiceQuestion from '../multipleChoice'
+import MultipleChoiceQuestion from '../multipleChoice';
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:11};
+
 interface Question {
   question: string;
   options: string[];
@@ -147,6 +155,7 @@ const ReinicioExcecoes = () => {
         <MultipleChoiceQuestion {...Question1} />
       </div>
     </div>
+    <Footer {...index} />
   </div>
   );
 };

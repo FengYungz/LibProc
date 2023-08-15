@@ -1,6 +1,13 @@
 import React from 'react';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:9};
 
 const DepuradorGNU = () => {
     return (
@@ -61,6 +68,7 @@ const DepuradorGNU = () => {
                     comando serão descritos na próxima página.
                 </p>
             </div>
+            <Footer {...index} />
         </>
     );
 };

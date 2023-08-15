@@ -3,6 +3,13 @@ import salto_1 from './imgs/salto_1.png';
 import '../../../assets/styles/global.css';
 import Quiz from '../quiz';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:2};
 
 interface Question{
   quest: string;
@@ -49,6 +56,7 @@ const InstrucoesSalto = () => {
           <Quiz {...Question1}/>
         </div>
       </div>
+      <Footer {...index}/>
     </>
   );
 };

@@ -8,6 +8,13 @@ import coprocessadores_6 from './imgs/coprocessadores_6.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
 import Quiz from "../quiz";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:12};
 
 interface Question{
   quest: string;
@@ -207,6 +214,7 @@ const Coprocessadores = () => {
         <Quiz {...Question1}/>
       </div>
     </div>
+    <Footer {...index}/>
     </div>
   );
 };

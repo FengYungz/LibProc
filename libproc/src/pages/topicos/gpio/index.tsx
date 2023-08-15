@@ -10,6 +10,13 @@ import gpio_8 from './imgs/gpio_8.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
 import Quiz from "../quiz";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:14};
 
 interface Question{
   quest: string;
@@ -113,6 +120,7 @@ const GPIO = () => {
                 </p>
             </div>
             </div>
+            <Footer {...index} />
         </>
     );
 };

@@ -2,6 +2,13 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import interface_depuracao_1 from './imgs/interface-depuracao_1.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:34};
 
 const InterfaceDepuracao = () => {
     return (
@@ -34,6 +41,7 @@ const InterfaceDepuracao = () => {
                     emulação de terminal (por exemplo, screen).
                 </p>
             </div>
+            <Footer {...index} />
         </>
     );
 };

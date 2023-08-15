@@ -13,6 +13,13 @@ import acesso_memoria_11 from './imgs/acesso-memoria_11.png';
 import '../../../assets/styles/global.css';
 import Quiz from "../quiz";
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:4};
 
 interface Question{
   quest: string;
@@ -173,6 +180,7 @@ const AcessoMemoria = () => {
                 <Quiz {...Question1}/>
                 </div>
             </div>
+            <Footer {...index} />
         </>
     );
 };

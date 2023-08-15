@@ -7,6 +7,14 @@ import gerenciador_interrupcoes_5 from './imgs/gerenciador-interrupcoes_5.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
 import Quiz from "../quiz";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:15};
+
 
 interface Question{
   quest: string;
@@ -93,6 +101,7 @@ const GerenciadorInterrupcoes = () => {
                 </div> 
             </div>
             </div>
+            <Footer {...index} />
         </>
     );
 };

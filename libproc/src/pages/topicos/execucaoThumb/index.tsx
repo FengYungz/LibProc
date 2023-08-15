@@ -2,6 +2,13 @@ import React from 'react';
 import execucao_thumb_1 from './imgs/execucao-thumb_1.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:31};
 
 const ExecucaoConjuntoInstrucoesThumb = () => {
     return (
@@ -24,6 +31,7 @@ const ExecucaoConjuntoInstrucoesThumb = () => {
                     diretamente as instruções thumb (sem um processo de “tradução”), que passa a
                     ser o único conjunto de instruções disponível.</p>
             </div>
+            <Footer {...index} />
         </>
     );
 };

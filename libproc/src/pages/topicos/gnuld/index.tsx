@@ -2,6 +2,13 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import gnu_ld_1 from './imgs/gnu-ld_1.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:8};
 
 const GNULD = () => {
     return (
@@ -82,6 +89,7 @@ const GNULD = () => {
                     </ul>
                 </p>
             </div>
+            <Footer {...index} />
         </>
     );
 };

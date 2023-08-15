@@ -3,6 +3,13 @@ import '../../../assets/styles/global.css';
 import arquitetura_soc_1 from './imgs/arquitetura-soc_1.png';
 import arquitetura_soc_2 from './imgs/arquitetura-soc_2.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:36};
 
 const ArquiteturaSoc = () => {
     return (
@@ -50,6 +57,7 @@ const ArquiteturaSoc = () => {
                 </p>
                 <img className="center-image" src={arquitetura_soc_2} alt="arquiteturaSoc 2" />
             </div>
+            <Footer {...index} />
         </>
     );
 };

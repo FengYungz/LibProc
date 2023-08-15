@@ -3,6 +3,13 @@ import salto_thumb_1 from './imgs/salto-thumb_1.png';
 import salto_thumb_2 from './imgs/salto-thumb_2.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:27};
 
 const InstrucoesSaltoThumb = () => {
     return (
@@ -78,6 +85,7 @@ const InstrucoesSaltoThumb = () => {
                 </p>
                 <img className="center-image" src={salto_thumb_2} alt="SaltoThumb 2" />
             </div>
+            <Footer {...index} />
         </>
     );
 };

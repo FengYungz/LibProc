@@ -1,6 +1,13 @@
 import React from 'react';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:18};
 
 const ImplementacaoLinguagemC = () => {
     return (
@@ -106,6 +113,7 @@ const ImplementacaoLinguagemC = () => {
                     necessárias para o suporte à linguagem C padronizada.
                 </p>
             </div>
+            <Footer {...index} />
         </>
     );
 };

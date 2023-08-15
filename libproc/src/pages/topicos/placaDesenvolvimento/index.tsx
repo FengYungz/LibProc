@@ -7,7 +7,14 @@ import placa_desenvolvimento_4 from './imgs/placa-desenvolvimento_4.png';
 import placa_desenvolvimento_5 from './imgs/placa-desenvolvimento_5.png';
 import placa_desenvolvimento_6 from './imgs/placa-desenvolvimento_6.png';
 import Header from "../../../components/Header/index";
-import MultipleChoiceQuestion from '../multipleChoice'
+import MultipleChoiceQuestion from '../multipleChoice';
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:13};
 
 interface Question {
     question: string;
@@ -123,6 +130,7 @@ const PlacaDesenvolvimento = () => {
                 </div>
             </div>
             </div>
+            <Footer {...index} />
         </>
     );
 };

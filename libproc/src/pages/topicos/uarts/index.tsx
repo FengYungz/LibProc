@@ -13,6 +13,13 @@ import uarts_10 from './imgs/uarts_10.png';
 import uarts_11 from './imgs/uarts_11.png';
 import Header from "../../../components/Header/index";
 import Quiz from "../quiz";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:17};
 
 interface Question{
   quest: string;
@@ -126,6 +133,7 @@ const UARTs = () => {
                 </div>
             </div>
             </div>
+            <Footer {...index} />
         </div>
     );
 };

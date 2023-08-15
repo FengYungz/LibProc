@@ -2,6 +2,13 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import makefile_exemplo_1 from './imgs/makefile-exemplo_1.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:35};
 
 const MakefileExemplo = () => {
     return (
@@ -26,6 +33,7 @@ const MakefileExemplo = () => {
                     segundo na porta “3334” e assim por diante.
                 </p>
             </div>
+            <Footer {...index} />
         </>
     );
 };

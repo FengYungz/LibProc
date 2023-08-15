@@ -5,7 +5,14 @@ import temporizadores_2 from './imgs/temporizadores_2.png';
 import temporizadores_3 from './imgs/temporizadores_3.png';
 import temporizadores_4 from './imgs/temporizadores_4.png';
 import Header from "../../../components/Header/index";
-import MultipleChoiceQuestion from '../multipleChoice'
+import MultipleChoiceQuestion from '../multipleChoice';
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:16};
 
 interface Question {
   question: string;
@@ -83,6 +90,7 @@ const Temporizadores = () => {
                 </div>
             </div>
             </div>
+            <Footer {...index} />
         </>
     );
 };

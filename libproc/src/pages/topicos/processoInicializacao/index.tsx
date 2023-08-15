@@ -2,6 +2,13 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import processo_inicializacao_1 from './imgs/processo-inicializacao_1.png';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:33};
 
 const ProcessoInicializacao = () => {
     return (
@@ -64,6 +71,7 @@ const ProcessoInicializacao = () => {
                     aplicação.
                 </p>
             </div>
+            <Footer {...index} />
         </>
     );
 };

@@ -10,6 +10,13 @@ import stubs from './imgs/stubs.png';
 import Header from "../../../components/Header/index";
 import Quiz from "../quiz";
 import styled from 'styled-components';
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:25};
 
 const QuestImg = styled.img`
   max-width: 40%;
@@ -167,6 +174,7 @@ const BibliotecaCNewlib = () => {
                 <Quiz {...Question1}/>
                 </div>
             </div>
+            <Footer {...index} />
         </>
     );
 };

@@ -2,6 +2,13 @@ import React from 'react';
 import load_store_1 from './imgs/load-store_1.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:29};
 
 const InstrucoesAcessoMemoria = () => {
     return (
@@ -64,6 +71,7 @@ const InstrucoesAcessoMemoria = () => {
                     em r15.
                 </p>
             </div>
+            <Footer {...index} />
         </>
     );
 };

@@ -3,6 +3,13 @@ import aritmeticas_1 from './imgs/aritmeticas_1.png';
 import aritmeticas_2 from './imgs/aritmeticas_2.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:28};
 
 const OperacoesAritmeticas = () => {
     return (
@@ -71,6 +78,7 @@ const OperacoesAritmeticas = () => {
                 </p>
                 <img className="center-image" src={aritmeticas_2} alt="Aritmeticas 2" />
             </div>
+            <Footer {...index} />
         </>
     );
 };

@@ -2,6 +2,13 @@ import React from 'react';
 import thumb2_1 from './imgs/thumb2_1.png';
 import '../../../assets/styles/global.css';
 import Header from "../../../components/Header/index";
+import Footer from '../footer';
+
+interface Index{
+  index: number;
+}
+
+const index:Index = {index:30};
 
 const ConjuntoInstrucoesThumb2 = () => {
     return (
@@ -66,6 +73,7 @@ const ConjuntoInstrucoesThumb2 = () => {
                     instrução especial (“ifelse”) que permite definir trechos de programa com
                     execução condicional sem a necessidade de saltos.</p>
             </div>
+            <Footer {...index} />
         </>
     );
 };
