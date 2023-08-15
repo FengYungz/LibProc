@@ -8,7 +8,9 @@ body {
   background-color: white;
   overflow-x: hidden;
   font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
 }
+
 
 .content-container {
   padding-top: 20px;
@@ -19,6 +21,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif; /* Adicione a classe font-roboto-condensed */
   line-height: 1.5; /* Defina o estilo lineHeight */
   text-align: justify;
+  min-height: 80vh;
 }
 
 
