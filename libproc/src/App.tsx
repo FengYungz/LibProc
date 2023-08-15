@@ -1,15 +1,11 @@
 import React from 'react';
-import Page from './pages/home/index';
-import Sumario from './components/Sumario';
-import './css/styles.css';
+import Routes from './routes';
+import './assets/styles/global.css'
 
 function App() {
   return (
     <>
-    <div className="app-container">
-      <Page />
-      <Sumario />
-    </div>
+      <Routes />
     </>
   );
 }

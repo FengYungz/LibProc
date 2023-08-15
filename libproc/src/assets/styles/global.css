@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+}
+
+.content-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 210mm;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Roboto Condensed', sans-serif; /* Adicione a classe font-roboto-condensed */
+  line-height: 1.5; /* Defina o estilo lineHeight */
+  text-align: justify;
+}
+
+
+/* Seus imports de fontes e outros estilos aqui */
+
+.app-container {
+  background-color: #FFFFFF;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 40px); /* Altura mínima igual à altura da janela - 2 * padding */
+}
+
+.center-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* A imagem não ultrapassará seu tamanho original */
+  height: auto; /* Altura ajustada automaticamente */
+}
+
+.espaco-paragrafo {
+  margin-bottom: 20px;
+}
+
+.alinha-item {
+  padding-left: 30px;
+}
+
+/* Adicione media queries para ajustar o layout em diferentes tamanhos de tela */
+@media screen and (max-width: 768px) {
+  body {
+    /*padding: 10px; /* Reduza o padding para telas menores */
+  }
+  
+  .center-image {
+    max-width: 80%; /* Reduza a largura máxima da imagem */
+  }
+  
+  /* Outros ajustes de estilo para telas menores */
+}

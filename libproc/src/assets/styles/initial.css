@@ -1,0 +1,17 @@
+.page-styles {
+    width: 100%;
+    /* A largura ocupará 100% da largura da janela */
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    background-image: url('matrix.jpg');
+    background-size: cover;
+    /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat;
+    /* Impede a repetição da imagem */
+    background-attachment: fixed;
+    /* Mantém a imagem fixa enquanto a página rola */
+    background-position: center center;
+    /* Centraliza a imagem no fundo */
+  }

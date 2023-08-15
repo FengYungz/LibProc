@@ -1,12 +1,14 @@
 import React from "react";
-import "../../css/styles.css";
+import Header from "../../components/Header";
 
-function Page() {
-  return (
-    <div className="page-container">
-      <h1>LIBPROC - PCS3732</h1>
-    </div>
-  );
+function Page(){
+    return(
+        <>
+        <Header />
+        <h1 style={{ textAlign: "center" }}>LIBPROC</h1>
+        <h2 style={{ textAlign: "center" }}>Teoria e questões da disciplina Laboratório de Processadores!</h2>
+        </>
+    )
 }
 
-export default Page;
+export default Page
