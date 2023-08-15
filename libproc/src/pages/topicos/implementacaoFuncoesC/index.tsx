@@ -4,6 +4,17 @@ import implementacao_funcoes_c_1 from './imgs/implementacao-funcoes-c_1.png';
 import implementacao_funcoes_c_2 from './imgs/implementacao-funcoes-c_2.png';
 import implementacao_funcoes_c_3 from './imgs/implementacao-funcoes-c_3.png';
 import Header from "../../../components/Header/index";
+import MultipleChoiceQuestion from '../multipleChoice'
+
+interface Question {
+  question: string;
+  options: string[];
+  answer:number;
+  correctMessage: any;
+  incorrectMessage: any;
+}
+
+const Question1: Question = { question: "Escolha a alternativa correta quanto às funções dos registradores na execução de uma função em C.", options: ["O \"stack pointer\" (SP) e o \"frame pointer\" (FP) podem ser usados indistintamente para acessar variáveis locais em uma função.", "Os parâmetros de uma função são passados nos registradores em sequência, começando do R0 e crescendo, sendo garantido que até o final da execução, aqueles registradores onde se passaram os parâmetros não irão ter seus valores alterados.", "O \"frame pointer\" \'caminha\' pela pilha ao longo da execução da função, a depender da variável que é preciso acessar no momento.", "O \"stack pointer\" indica o endereço do topo da pilha a cada momento da execução."], answer:3, correctMessage:<div><p>A resposta está correta!</p><p>A função do registrador SP é justamente apontar para o endereço do topo da pilha.</p><p>SP e FP possuem funções distintas, ainda que relacionadas à identificação de endereços na pilha.</p><p>Não há nenhuma garantia que o valores dos parâmetros serão preservados nos registradores, sendo, inclusive, improvável.</p><p>O frame pointer aponta para a base da pilha durante toda a execução da função.</p></div>, incorrectMessage:<div><p>A resposta correta seria a última alternativa.</p><p>A função do registrador SP é justamente apontar para o endereço do topo da pilha.</p><p>SP e FP possuem funções distintas, ainda que relacionadas à identificação de endereços na pilha.</p><p>Não há nenhuma garantia que o valores dos parâmetros serão preservados nos registradores, sendo, inclusive, improvável.</p><p>O frame pointer aponta para a base da pilha durante toda a execução da função.</p></div>};
 
 const ImplementacaoFuncoesC = () => {
     return (
@@ -29,6 +40,7 @@ const ImplementacaoFuncoesC = () => {
                 </p>
 
                 <img className="center-image" src={implementacao_funcoes_c_1} alt="implementacaoFuncoes 1" />
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     Todas as funções em C têm a obrigação de retornar a pilha no mesmo
@@ -94,6 +106,7 @@ const ImplementacaoFuncoesC = () => {
                         usando a pilha).
                     </li>
                 </ul>
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     O valor de retorno de uma função é passado de volta à função chamadora
@@ -109,6 +122,7 @@ const ImplementacaoFuncoesC = () => {
                     convencionado conforme a tabela a seguir:
                 </p>
                 <img className="center-image" src={implementacao_funcoes_c_3} alt="implementacaoFuncoes 3" />
+                <p className="espaco-paragrafo"></p>
                 <p className="espaco-paragrafo">
                     O valor anterior do frame pointer sempre é salvo na pilha pelo prólogo da
                     função chamada; caso essa função chame outras funções, o valor do link register
@@ -141,6 +155,7 @@ const ImplementacaoFuncoesC = () => {
                         ponteiros.
                     </li>
                 </ul>
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     Caso existam mais parâmetros, os parâmetros excedentes serão
@@ -151,6 +166,9 @@ const ImplementacaoFuncoesC = () => {
                     exemplo o retorno de uma estrutura), o mecanismo descrito anteriormente é
                     utilizado.
                 </p>
+                <div>
+                <MultipleChoiceQuestion {...Question1} />
+                </div>
             </div>
         </>
     );

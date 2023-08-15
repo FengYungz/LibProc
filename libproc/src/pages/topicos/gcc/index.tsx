@@ -15,6 +15,7 @@ const GNUCompiler = () => {
                 </p>
 
                 <img className="center-image" src={gcc_1} alt="gcc 1" />
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     Quando se utiliza a compilação cruzada, é introduzido o prefixo
@@ -62,6 +63,7 @@ const GNUCompiler = () => {
                         nome que o arquivo-fonte, com a extensão .o .
                     </li>
                 </ul>
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     Normalmente, informações de depuração (descrição dos símbolos,
@@ -72,6 +74,7 @@ const GNUCompiler = () => {
                 </p>
 
                 <img className="center-image" src={gcc_2} alt="gcc 2" />
+                <p className="espaco-paragrafo"></p>
             </div>
         </>
     );

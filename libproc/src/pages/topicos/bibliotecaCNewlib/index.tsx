@@ -6,7 +6,25 @@ import biblioteca_c_newlib_3 from './imgs/biblioteca-c-newlib_3.png';
 import biblioteca_c_newlib_4 from './imgs/biblioteca-c-newlib_4.png';
 import biblioteca_c_newlib_5 from './imgs/biblioteca-c-newlib_5.png';
 import biblioteca_c_newlib_6 from './imgs/biblioteca-c-newlib_6.png';
+import stubs from './imgs/stubs.png';
 import Header from "../../../components/Header/index";
+import Quiz from "../quiz";
+import styled from 'styled-components';
+
+const QuestImg = styled.img`
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  `;
+
+interface Question{
+  quest: any;
+  ans: any;
+}
+
+const Question1: Question = {quest: <div><p>Quais stubs da biblioteca newlib vão ser acionados indiretamente pelo código da imagem?</p><QuestImg src={stubs} alt="stubs" /></div>, ans: <div><p>Os stubs necessários serão:</p><p>_time(): possibilita a consulta de tempo do sistema;</p><p>_write(): enviar informações para o terminal;</p><p>_sbrk(): implementa as funções de alocação de memória dinâmica;</p><p>Além disso o _exit() também deve ser utilizado no final do processo.</p><p>A resolução dessa questão com mais comentários pode ser encontrada em <a href="https://www.wise-ware.com.br/pcs3732/d/156-questoes-em-sala/42">Questão 24</a> no fórum da disciplina :)</p></div>};
+
 
 const BibliotecaCNewlib = () => {
     return (
@@ -60,7 +78,7 @@ const BibliotecaCNewlib = () => {
                         Saltos longos (“setjmp”): setjmp, longjmp.
                     </li>
                 </ul>
-
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     Para que as funções do newlib sejam incluídas no arquivo executável,
@@ -71,6 +89,7 @@ const BibliotecaCNewlib = () => {
                 </p>
 
                 <img className="center-image" src={biblioteca_c_newlib_1} alt="biblioteca-c-newlib 1" />
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     Esse comando, contudo, vai falhar na maioria das vezes. As funções da
@@ -88,6 +107,7 @@ const BibliotecaCNewlib = () => {
                 </p>
 
                 <img className="center-image" src={biblioteca_c_newlib_2} alt="biblioteca-c-newlib 2" />
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     O único “stub” que precisa ser implementado de forma não trivial é
@@ -99,6 +119,7 @@ const BibliotecaCNewlib = () => {
 
 
                 <img className="center-image" src={biblioteca_c_newlib_3} alt="biblioteca-c-newlib 3" />
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     A implementação anterior não verifica se existe memória disponível:
@@ -120,6 +141,7 @@ const BibliotecaCNewlib = () => {
 
 
                 <img className="center-image" src={biblioteca_c_newlib_4} alt="biblioteca-c-newlib 4" />
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     O “stub” _write() é responsável por enviar caracteres pelo canal serial,
@@ -129,16 +151,21 @@ const BibliotecaCNewlib = () => {
                 </p>
 
                 <img className="center-image" src={biblioteca_c_newlib_5} alt="biblioteca-c-newlib 5" />
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     Assim, ao ser executada uma função como
                 </p>
 
                 <img className="center-image" src={biblioteca_c_newlib_6} alt="biblioteca-c-newlib 6" />
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     O string formatado é enviado pela UART 0.
                 </p>
+                <div>
+                <Quiz {...Question1}/>
+                </div>
             </div>
         </>
     );

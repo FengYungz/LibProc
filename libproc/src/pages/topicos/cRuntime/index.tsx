@@ -2,6 +2,17 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import c_runtime_1 from './imgs/c-runtime_1.png';
 import Header from "../../../components/Header/index";
+import MultipleChoiceQuestion from '../multipleChoice'
+
+interface Question {
+  question: string;
+  options: string[];
+  answer:number;
+  correctMessage: any;
+  incorrectMessage: any;
+}
+
+const Question1: Question = { question: "Qual das seguintes alternativas não representa um papel exercido por funções do Runtime na linguagem C?", options: ["Salvamento de registradores e manutenção da pilha durante chamadas de funções.", "Conversão de tipos de dados.", "Otimização do código-fonte C para melhorar o desempenho.", "Operações lógicas bit a bit (and, or)."], answer:2, correctMessage:<div><p>A resposta está correta!</p><p>A otimização do código para melhoria de desempenho é uma função exercida primariamente pelo compilador, não estando relacionada diretamente ao Runtime.</p></div>, incorrectMessage:<div><p>A otimização do código para melhoria de desempenho é uma função exercida primariamente pelo compilador, não estando relacionada diretamente ao Runtime.</p><p>Todas as demais alternativas representam funções que podem ser realizadas pelas funções presentes no Runtime;</p></div>};
 
 const CRuntime = () => {
     return (
@@ -62,6 +73,10 @@ const CRuntime = () => {
                 </p>
 
                 <img className="center-image" src={c_runtime_1} alt="cRuntime 1" />
+                <p className="espaco-paragrafo"></p>
+                <div>
+                <MultipleChoiceQuestion {...Question1} />
+                </div>
             </div>
         </>
     );

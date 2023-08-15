@@ -1,6 +1,24 @@
 import React from 'react';
 import '../../../assets/styles/global.css';
+import bibCquest from './imgs/bibCquest.png';
 import Header from "../../../components/Header/index";
+import Quiz from "../quiz";
+import styled from 'styled-components';
+
+const QuestImg = styled.img`
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  `;
+
+interface Question{
+  quest: any;
+  ans: any;
+}
+
+const Question1: Question = {quest: <div><p>Onde vão estar os símbolos a, b, c e i na memória do programa em C abaixo?</p><QuestImg src={bibCquest} alt="BibC" /> </div>, ans: <div><p>a, por ser uma variável global sem inicialização, estará no segmento .bss (valor inicial 0)</p><p>b, por ser uma variável local estática com inicialização, estará no segmento .data</p><p>E c e i, por serem variáveis locais normais, estarão no segmento de pilha.</p><p>Para entender melhor o problema consulte a resposta à <a href="https://www.wise-ware.com.br/pcs3732/d/156-questoes-em-sala/23">Questão 19</a> no fórum da disciplina.</p></div>};
+
 
 const DadosC = () => {
     return (
@@ -41,6 +59,7 @@ const DadosC = () => {
                         assuma o valor “zero”, por exemplo.
                     </li>
                 </ul>
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     Vetores são alocados em posições de memória consecutivas, com um
@@ -78,6 +97,9 @@ const DadosC = () => {
                     explicitamente também são inicializadas com zero, por residirem na área de
                     memória do segmento .bss.
                 </p>
+                <div>
+                <Quiz {...Question1}/>
+                </div>
             </div>
         </>
     );

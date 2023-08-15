@@ -56,12 +56,12 @@ const BibliotecaC = () => {
                 <p className="espaco-paragrafo">
                     De um modo geral, todas as declarações das funções presentes na
                     biblioteca padrão são acessíveis para inclusão no código-fonte com o comando
-                    #includedo pré-processador, em arquivos cabeçalho como
-                    stdio.h ,math.h ,
-                    stdlib.h ,
-                    string.h , etc. As bibliotecas a serem utilizadas
+                    #include do pré-processador, em arquivos cabeçalho como
+                    stdio.h, math.h,
+                    stdlib.h,
+                    string.h, etc. As bibliotecas a serem utilizadas
                     também devem incluídas entre os arquivos a serem consultados pelo linker
-                    ( libm.a , libpthread.a , etc.).
+                    ( libm.a, libpthread.a , etc.).
                 </p>
 
                 <p className="espaco-paragrafo">Você pode verificar as funções de biblioteca existentes na versão do gcc
@@ -70,6 +70,7 @@ const BibliotecaC = () => {
 
 
                 <img className="center-image" src={biblioteca_c_1} alt="biblioteca-c 1" />
+                <p className="espaco-paragrafo"></p>
 
                 <p className="espaco-paragrafo">
                     Existem várias implementações da biblioteca C que podem ser utilizadas
@@ -82,6 +83,7 @@ const BibliotecaC = () => {
                     utilizada sem o suporte de um sistema operacional (aplicações “bare metal”, por
                     isso o “none” no prefixo) e em sistemas sem suporte a memória virtual.
                 </p>
+                
             </div>
         </>
     );
