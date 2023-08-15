@@ -30,11 +30,8 @@ import CRuntime from '../pages/topicos/cRuntime';
 import BibliotecaC from '../pages/topicos/bibliotecaC';
 import DadosC from '../pages/topicos/dadosC';
 import ImplementacaoFuncoesC from '../pages/topicos/implementacaoFuncoesC';
-import GNUCompiler from '../pages/topicos/gcc';
-import AmbienteDesenvolvimento from '../pages/topicos/ambienteDesenvolvimento';
-import AtributosFuncaoGCC from '../pages/topicos/atributosFuncao';
-import AssemblerInline from '../pages/topicos/assemblerInline';
-import RuntimeGCC from '../pages/topicos/runtimeGcc';
+import GNUCompilerAgregado from '../pages/topicos/gccAgregado';
+import AtributosFuncaoGCCAgregado from '../pages/topicos/atributosFuncaoAgregado';
 import BibliotecaCNewlib from '../pages/topicos/bibliotecaCNewlib';
 import RaspberryPi from '../pages/topicos/raspberryPi';
 import ProcessoInicializacao from '../pages/topicos/processoInicializacao';
@@ -84,11 +81,8 @@ const AppRoutes = () => {
                 <Route path='/topicos/bibliotecaC' element={<BibliotecaC />} />
                 <Route path='/topicos/dadosC' element={<DadosC />} />
                 <Route path='/topicos/implementacaoFuncoesC' element={<ImplementacaoFuncoesC />} />
-                <Route path='/topicos/gcc' element={<GNUCompiler />} />
-                <Route path='/topicos/ambienteDesenvolvimento' element={<AmbienteDesenvolvimento />} />
-                <Route path='/topicos/atributosFuncao' element={<AtributosFuncaoGCC />} />
-                <Route path='/topicos/assemblerInline' element={<AssemblerInline />} />
-                <Route path='/topicos/runtimeGcc' element={<RuntimeGCC />} />
+                <Route path='/topicos/gccAgregado' element={<GNUCompilerAgregado />} />
+                <Route path='/topicos/atributosFuncaoAgregado' element={<AtributosFuncaoGCCAgregado />} />
                 <Route path='/topicos/bibliotecaCNewlib' element={<BibliotecaCNewlib />} />
                 <Route path='/topicos/raspberryPi' element={<RaspberryPi />} />
                 <Route path='/topicos/processoInicializacao' element={<ProcessoInicializacao />} />

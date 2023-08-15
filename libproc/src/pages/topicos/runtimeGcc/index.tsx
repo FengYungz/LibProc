@@ -2,7 +2,6 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import runtime_gcc_1 from './imgs/runtime-gcc_1.png';
 import runtime_gcc_quest from './imgs/runtimeGccQuest.png';
-import Header from "../../../components/Header/index";
 import Quiz from "../quiz";
 import styled from 'styled-components';
 
@@ -24,7 +23,6 @@ const Question1: Question = {quest: <div><p>Explique o código da imagem:</p><Qu
 const RuntimeGCC = () => {
     return (
         <>
-            <Header />
             <div className="content-container">
                 <h3>O runtime do gcc</h3>
                 <p className="espaco-paragrafo">

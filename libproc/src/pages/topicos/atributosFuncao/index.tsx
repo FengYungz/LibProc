@@ -3,12 +3,10 @@ import '../../../assets/styles/global.css';
 import atributos_funcao_1 from './imgs/atributos-funcao_1.png';
 import atributos_funcao_2 from './imgs/atributos-funcao_2.png';
 import atributos_funcao_3 from './imgs/atributos-funcao_3.png';
-import Header from "../../../components/Header/index";
 
 const AtributosFuncaoGCC = () => {
     return (
         <>
-            <Header />
             <div className="content-container">
                 <h3>Atributos de função no GCC</h3>
                 <p className="espaco-paragrafo">

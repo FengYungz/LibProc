@@ -3,7 +3,6 @@ import '../../../assets/styles/global.css';
 import ambiente_desenvolvimento_1 from './imgs/ambiente-desenvolvimento_1.png';
 import ambiente_desenvolvimento_2 from './imgs/ambiente-desenvolvimento_2.png';
 import ambiente_desenvolvimento_3 from './imgs/ambiente-desenvolvimento_3.png';
-import Header from "../../../components/Header/index";
 import Quiz from "../quiz";
 
 interface Question{
@@ -17,7 +16,6 @@ const Question1: Question = {quest: "Identifique as opções de GCC presentes no
 const AmbienteDesenvolvimento = () => {
     return (
         <>
-            <Header />
             <div className="content-container">
                 <h3>Ambiente de desenvolvimento</h3>
                 <p className="espaco-paragrafo">

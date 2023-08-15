@@ -2,12 +2,10 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import gcc_1 from './imgs/gcc_1.png';
 import gcc_2 from './imgs/gcc_2.png';
-import Header from "../../../components/Header/index";
 
 const GNUCompiler = () => {
     return (
         <>
-            <Header />
             <div className="content-container">
                 <h3>GNU C Compiler (gcc)</h3>
                 <p className="espaco-paragrafo">

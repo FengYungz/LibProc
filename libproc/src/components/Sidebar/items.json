@@ -148,27 +148,12 @@
             {
                 "icon": "BiBookBookmark",
                 "text": "GNU C Compiler (gcc)",
-                "link": "/topicos/gcc"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Ambiente de desenvolvimento",
-                "link": "/topicos/ambienteDesenvolvimento"
+                "link": "/topicos/gccAgregado"
             },
             {
                 "icon": "BiBookBookmark",
                 "text": "Atributos de função no GCC",
-                "link": "/topicos/atributosFuncao"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "Assembler inline",
-                "link": "/topicos/assemblerInline"
-            },
-            {
-                "icon": "BiBookBookmark",
-                "text": "O runtime do gcc",
-                "link": "/topicos/runtimeGcc"
+                "link": "/topicos/atributosFuncaoAgregado"
             },
             {
                 "icon": "BiBookBookmark",

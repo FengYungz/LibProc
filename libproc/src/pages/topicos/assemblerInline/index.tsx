@@ -4,12 +4,10 @@ import assembler_inline_1 from './imgs/assembler-inline_1.png';
 import assembler_inline_2 from './imgs/assembler-inline_2.png';
 import assembler_inline_3 from './imgs/assembler-inline_3.png';
 import assembler_inline_4 from './imgs/assembler-inline_4.png';
-import Header from "../../../components/Header/index";
 
 const AssemblerInline = () => {
     return (
         <>
-            <Header />
             <div className="content-container">
                 <h3>Assembler inline</h3>
                 <p className="espaco-paragrafo">
