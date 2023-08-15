@@ -8,7 +8,6 @@ export const Container = styled.div`
   }
   a{
     text-decoration: none; /* Remove a linha sublinhada */
-    color: blue;
     font-size: 15px;
   }
 `;
